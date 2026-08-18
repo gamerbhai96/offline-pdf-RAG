@@ -1,0 +1,29 @@
+{
+  "num_questions": 12,
+  "summary": {
+    "BM25": {
+      "top1_accuracy": 0.5833,
+      "mrr": 0.7236,
+      "top1_hits": 7,
+      "total": 12
+    },
+    "Dense": {
+      "top1_accuracy": 0.3333,
+      "mrr": 0.5972,
+      "top1_hits": 4,
+      "total": 12
+    },
+    "RRF": {
+      "top1_accuracy": 0.6667,
+      "mrr": 0.7667,
+      "top1_hits": 8,
+      "total": 12
+    },
+    "RRF_Ranker": {
+      "top1_accuracy": 0.9167,
+      "mrr": 0.9375,
+      "top1_hits": 11,
+      "total": 12
+    }
+  }
+}

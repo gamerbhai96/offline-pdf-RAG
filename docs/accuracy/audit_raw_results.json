@@ -1,0 +1,388 @@
+[
+  {
+    "id": "Q_DEF_1",
+    "question": "What is Hive?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Apache Hive \u2013 Introduction",
+        "Introduction to Apache Hive"
+      ],
+      "actual_top_section": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query | \u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query \u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale \u2022 Multiple File Format Support - Hive supports a wide range of file formats including TextFile, \u2022 How Hive Works \u2022 Summarization Hive aggregates and condenses large volumes of raw data into meaningful \u2022 Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like \u2022 Analysis Hive enables in-depth examination of large datasets to uncover patterns, trends, and \u2022 HDFS for Storage Hive stores all its data in the Hadoop Distributed File System, enabling reliable \u2022 MapReduce for Execution Hive converts HiveQL queries into MapReduce jobs, which are then \u2022 Stores Metadata/Schemas in an RDBMS Hive stores table definitions, schemas, and other metadata \u2022 Hive Data Units",
+    "latency_ms": 9.14
+  },
+  {
+    "id": "Q_DEF_2",
+    "question": "What is HQL?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "Apache Hive \u2013 HQL",
+        "HQL"
+      ],
+      "actual_top_section": "Unit IV: Apache Hive \u2013 HQL | 1. Introduction to Apache Hive",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes structured data stored in HDFS.",
+    "latency_ms": 7.55
+  },
+  {
+    "id": "Q_DEF_3",
+    "question": "What is bucketing?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "Apache Hive \u2013 Bucketing",
+        "Bucketing"
+      ],
+      "actual_top_section": "4.3 Bucketing | Bucketing is another technique for managing large datasets. Data in each partition is divided into",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "Bucketing is another technique for managing large datasets.",
+    "latency_ms": 4.27
+  },
+  {
+    "id": "Q_DEF_4",
+    "question": "What is partitioning?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "Apache Hive \u2013 Partitioning",
+        "Partitioning"
+      ],
+      "actual_top_section": "4.2.1 Types of Partitioning | 1. Static Partitioning",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "In static partitioning, the partition values are specified manually when loading/inserting data into a Hive table.",
+    "latency_ms": 3.47
+  },
+  {
+    "id": "Q_DEF_5",
+    "question": "What is Hive Metastore?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "Apache Hive \u2013 Architecture",
+        "Apache Hive \u2013 Components",
+        "Metastore"
+      ],
+      "actual_top_section": "[ Hive Process ] | \u2193",
+      "expected_section_rank": 2,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "[ Hive Process ] \u2193 [ Metastore Ser\tvice\t+ Derby DB\t] \u2190 All within t\the same process In this mode,\tthe\tMetastore\tservice still ru\tns within the Hive process, but ins\ttead of using\tthe embedded De\trby\tdatabase,\tit connects to a\tn external relational database suc\th as MySQL\tor PostgreSQL.",
+    "latency_ms": 6.96
+  },
+  {
+    "id": "Q_DEF_6",
+    "question": "What is Hive architecture?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Apache Hive \u2013 Architecture"
+      ],
+      "actual_top_section": "Working Flow of Hive Architecture | Step 1: USER The process begins when a user submits a HiveQL query through any available interface.",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "Working Flow of Hive Architecture Step 1: USER The process begins when a user submits a HiveQL query through any available interface.",
+    "latency_ms": 6.97
+  },
+  {
+    "id": "Q_FEAT_1",
+    "question": "What are the features of Hive?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Features of Hive",
+        "Apache Hive \u2013 Features"
+      ],
+      "actual_top_section": "1.1 How Apache Hive was Introduced | Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "LIST",
+    "final_confidence": "HIGH",
+    "answer": "  \u2022 How Apache Hive was Introduced\n  \u2022 Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\n  \u2022 structured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact\n  \u2022 with and query large datasets without deep knowledge of MapReduce programming.\n  \u2022 Features of Apache Hive\n  \u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\n  \u2022 allowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and\n  \u2022 developers with SQL knowledge to work with big data without learning complex MapReduce code.",
+    "latency_ms": 17.06
+  },
+  {
+    "id": "Q_FEAT_2",
+    "question": "What are the advantages of Hive?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Advantages of Hive",
+        "Apache Hive \u2013 Advantages"
+      ],
+      "actual_top_section": "1.1 How Apache Hive was Introduced | Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": false,
+    "gate_2_pass": false,
+    "route": "LIST",
+    "final_confidence": "NO_ANSWER",
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic.",
+    "latency_ms": 6.28
+  },
+  {
+    "id": "Q_FACT_1",
+    "question": "How was Apache Hive introduced?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Apache Hive \u2013 Introduction",
+        "History of Hive"
+      ],
+      "actual_top_section": "Unit IV: Apache Hive \u2013 HQL | 1. Introduction to Apache Hive",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "SUMMARY",
+    "final_confidence": "HIGH",
+    "answer": "\nPage 1\n------\n1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS.\nIt provides an SQL-like interface, enabling users to easily interact\nwith and query large datasets without deep knowledge of MapReduce programming.\n2.\nFeatures of Apache Hive\n1.\nSQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\nallowing users to write familiar SQL-like queries on large datasets.\nThis makes it easier for analysts and\ndevelopers with SQL knowledge to work with big data without learning complex MapReduce code.\n2.",
+    "latency_ms": 11.02
+  },
+  {
+    "id": "Q_FACT_2",
+    "question": "What does length(str) do?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "String Functions",
+        "Built-in Functions"
+      ],
+      "actual_top_section": "\u2022 Built-in String Functions: | \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "The return type is STRING . \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string. \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in \u2022 upper(str) : Converts all characters in the string to uppercase.",
+    "latency_ms": 8.14
+  },
+  {
+    "id": "Q_FACT_3",
+    "question": "hive layer",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "Apache Hive \u2013 Architecture",
+        "Architecture"
+      ],
+      "actual_top_section": "HIVE LAYER | 1. Command Line Interface (CLI) - The CLI is the simplest way to interact with Hive, allowing users",
+      "expected_section_rank": 2,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "Driver (Compiler, Optimizer, Executor) - The Driver is the core component of Hive that manages the lifecycle of a HiveQL query through three stages: Compiler \u2014 Parses and converts the HiveQL query into an execution plan. \uf0b7 \uf0b7 Optimizer \u2014 Refines the execution plan to improve efficiency and reduce resource usage. \uf0b7 Executor \u2014 Executes the final optimized plan by submitting jobs to the Hadoop layer. 7.",
+    "latency_ms": 6.77
+  },
+  {
+    "id": "Q_FACT_4",
+    "question": "hive functions",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "String Functions",
+        "Built-in Functions",
+        "Aggregate Functions"
+      ],
+      "actual_top_section": "\u2022 Built-in String Functions: | \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "LIST",
+    "final_confidence": "HIGH",
+    "answer": "  \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n  \u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n  \u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n  \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n  \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n  \u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n  \u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is\n  \u2022 NULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al",
+    "latency_ms": 124.72
+  },
+  {
+    "id": "Q_COMP_1",
+    "question": "What is the difference between bucketing and partitioning?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Apache Hive \u2013 Bucketing",
+        "Apache Hive \u2013 Partitioning",
+        "Differences"
+      ],
+      "actual_top_section": "4.3 Bucketing | Bucketing is another technique for managing large datasets. Data in each partition is divided into",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "TABLE",
+    "final_confidence": "HIGH",
+    "answer": "\nTable\n-----\n\n| Item / Function | Description |\n| --- | --- |\n| Feature | Partitioning Bucketing |\n| Cardinality | Low / Medium High |\n| Storage | Sub-directories Files |\n| Columns | Multiple columns Single column |\n| Best For | Filtering queries Joins & sampling |\n| Data Distribution | Logical grouping Hash-based distribution |\n| Example | PARTITIONED BY (year, CLUSTERED BY (user_id) |\n| month, day) | INTO 8 BUCKETS |\n",
+    "latency_ms": 6.08
+  },
+  {
+    "id": "Q_FORM_1",
+    "question": "Give the string functions in Hive in a table.",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": true,
+      "top_5_correct": true,
+      "top_10_correct": true,
+      "expected_sections": [
+        "String Functions",
+        "Built-in Functions"
+      ],
+      "actual_top_section": "\u2022 Built-in String Functions: | \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing",
+      "expected_section_rank": 1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "TABLE",
+    "final_confidence": "HIGH",
+    "answer": "\nTable\n-----\n\n| Item / Function | Description |\n| --- | --- |\n| NULL value | s are ignored by SU M (), AVG (), MI N (), and MA X (). However, COUNT (* ) counts al |\n| regardless of | NULL values. |\n| These functio | ns help in generatin g summarized inf ormation such as total sales, a verage sala ry, minim |\n| maximum va | lues, and record cou nts from large dat asets. |\n| Syntax | SEL\tECT aggregate_fu\tnction (colum\tn_\tname) FROM\ttable_name; |\n| B\tuilt-in Strin\tg Functions |  |\n| Fig 10 | Built-in St\tring\tFunctions Table |\n| String functi | ons in Hive are use d to manipulate , f ormat, and pro cess string (text ) data. The y help in p |\n| operations su | ch as concatenation , extraction, co nve rsion of case, and removal of unwanted spaces. |\n| length(str) | R\teturns the number\tof characters p\tres\tent in the give\tn string. The ret\turn type is\tINT. |\n| reverse(str) | Returns the string w\tith its characte\trs\tin reverse ord\ter. The return ty\tpe is STR\tING. |\n| concat(str1,\tstr2, ...) | Combines\ttwo or more st\trin\tgs into a singl\te string. The ret\turn type is\tSTRING. |\n| substr(str, st\tart_index) | Return\ts the substring\tsta\trting from the\tspecified positi\ton until the\tend of the |\n| The return ty | pe is STRING. |\n| substr(str, st\tart_index, length) | Returns a subs\ttri\tng of the speci\tfied length start\ting from th\te given po |\n| the string. Th | e return type is STR ING. |\n| upper(str) | C\tonverts all characte\trs in the string\tto\tuppercase. Th\te return type is\tSTRING. |\n| lower(str) | C\tonverts all characte\trs in the string\tto l\towercase. Th\te return type is\tSTRING. |\n| trim(str) | Re\tmoves leading and\ttrailing whitesp\tac\te characters fr\tom the string. T\the return t\type is STR |\n| ltrim(str) | R\temoves whitespace\tcharacters from\tth\te left side (be\tginning) of the\tstring. The\treturn typ |\n| STRING. | - |\n| rtrim(str) | R\temoves whitespace\tcharacters fro\tm t\the right side (e\tnd) of the strin\tg. The retur\tn type is S |\n| These functio | ns are widely used for data cleansi ng, formatting, a nd transformatio n of text d ata before |\n| and reporting | . |\n| Exa | mpl es |\n| F | unction Exam ple Result |\n| leng | th(' Hive') Returns string lengt h 4 |\n| rev | erse ('Hive') Reverses the string eviH |\n| con | cat( 'Big','Data') Concatenates string s BigData |\n| sub | str(' Hadoop',2) Extracts substring f rom position 2 adoop |\n| sub | str(' Hadoop',2,3) Extracts 3 character s from position 2 ado |\n| upp | er('h ive') Converts to upperca se HIVE |\n| low | er(' HIVE') Converts to lowerca se hive |\n| trim | (' H ive ') Removes spaces fro m both ends Hive |\n| ltri | m(' Hive') Removes left space s Hive |\n| rtri | m('H ive ') Removes right spac es Hive |\n| Unit IV \u2013 Apache H | ive (HQL) | Page 16 |\n",
+    "latency_ms": 22.39
+  },
+  {
+    "id": "Q_SUMM_1",
+    "question": "Summarize the architecture of Hive.",
+    "intent_match": true,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [
+        "Apache Hive \u2013 Architecture"
+      ],
+      "actual_top_section": "Working Flow of Hive Architecture | Step 1: USER The process begins when a user submits a HiveQL query through any available interface.",
+      "expected_section_rank": -1,
+      "section_confusion": true
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": false,
+    "route": "SUMMARY",
+    "final_confidence": "NO_ANSWER",
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic.",
+    "latency_ms": 7.53
+  },
+  {
+    "id": "Q_NOANS_1",
+    "question": "What is quantum entanglement in Hive?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [],
+      "actual_top_section": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query | \u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale",
+      "expected_section_rank": -1,
+      "section_confusion": false
+    },
+    "gate_1_pass": false,
+    "gate_2_pass": false,
+    "route": "FACT_QA",
+    "final_confidence": "NO_ANSWER",
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic.",
+    "latency_ms": 5.57
+  },
+  {
+    "id": "Q_NOANS_2",
+    "question": "How to deploy a machine learning model using Hive?",
+    "intent_match": false,
+    "retrieval_metrics": {
+      "top_1_correct": false,
+      "top_5_correct": false,
+      "top_10_correct": false,
+      "expected_sections": [],
+      "actual_top_section": "format for their data storage and query performance requirements. 3. How Hive Works The three main tasks performed by Apache Hive are: \uf0a7 Summarization \uf0a7 Querying \uf0a7 Analysis 1. Summarization Hive aggregates and condenses large volumes of raw data into meaningful summaries for reporting and analysis. 2. Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like query language. 3. Analysis Hive enables in-depth examination of large datasets to uncover patterns, trends, and business insights.",
+      "expected_section_rank": -1,
+      "section_confusion": false
+    },
+    "gate_1_pass": true,
+    "gate_2_pass": true,
+    "route": "FACT_QA",
+    "final_confidence": "HIGH",
+    "answer": "Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like query language. 3.",
+    "latency_ms": 8.92
+  }
+]

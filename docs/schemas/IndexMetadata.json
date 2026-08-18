@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/IndexMetadata.json",
+  "title": "IndexMetadata",
+  "description": "Versioned metadata for a document's embedding and BM25 indexes. All fields are mandatory for compatibility detection.",
+  "type": "object",
+  "required": [
+    "index_id", "index_version", "document_id",
+    "embedding_model_id", "embedding_model_version",
+    "embedding_dimension", "embedding_preprocessing_version",
+    "chunking_strategy", "chunking_version",
+    "distance_metric", "vector_index_type", "vector_index_version",
+    "created_at", "source_document_hash"
+  ],
+  "properties": {
+    "index_id":                        { "type": "string", "format": "uuid" },
+    "index_version":                   { "type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$" },
+    "document_id":                     { "type": "string", "format": "uuid" },
+    "embedding_model_id":              { "type": "string", "examples": ["bge-small-en-v1.5", "e5-small-v2"] },
+    "embedding_model_version":         { "type": "string", "examples": ["1.5.0"] },
+    "embedding_dimension":             { "type": "integer", "minimum": 1 },
+    "embedding_preprocessing_version": { "type": "string", "examples": ["1.0"] },
+    "chunking_strategy":               { "type": "string", "enum": ["HEADING_AWARE", "PARAGRAPH", "FIXED_OVERLAP", "SENTENCE"] },
+    "chunking_version":                { "type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$" },
+    "distance_metric":                 { "type": "string", "enum": ["cosine", "dot", "l2"] },
+    "vector_index_type":               { "type": "string", "enum": ["brute_force", "hnsw"] },
+    "vector_index_version":            { "type": "string" },
+    "hnsw_M":                          { "type": ["integer", "null"] },
+    "hnsw_ef_construction":            { "type": ["integer", "null"] },
+    "hnsw_ef_search":                  { "type": ["integer", "null"] },
+    "bm25_index_path":                 { "type": ["string", "null"] },
+    "hnsw_index_path":                 { "type": ["string", "null"] },
+    "is_stale":                        { "type": "boolean", "default": false },
+    "stale_reason":                    { "type": ["string", "null"] },
+    "created_at":                      { "type": "string", "format": "date-time" },
+    "source_document_hash":            { "type": "string", "minLength": 64, "maxLength": 64 }
+  }
+}

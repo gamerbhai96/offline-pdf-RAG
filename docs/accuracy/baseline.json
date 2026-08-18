@@ -1,0 +1,1736 @@
+[
+  {
+    "num": 1,
+    "original_question": "What is Hive?",
+    "normalized_question": "what is hive?",
+    "intent": "DEFINITION",
+    "entity": [
+      "Hive"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "20757d84-55b7-4359-a439-76f139f83908",
+        "page_id": "10",
+        "score": 1.0,
+        "text": "7.1 Primitive Data Type\n\uf0b7 NameNode \u2014 Manages metadata, i.e., it keeps track of where data is stored "
+      },
+      {
+        "chunk_id": "10c8d61d-63fa-48d9-9df1-954e70de7bb5",
+        "page_id": "13",
+        "score": 0.701,
+        "text": "9.1 DDL (Data Definition Language) Statements\nUsed to build and modify tables and other objects in t"
+      },
+      {
+        "chunk_id": "a384e55b-d54f-489e-afb9-3db6d3d60902",
+        "page_id": "13",
+        "score": 0.5709,
+        "text": "8.6\tSe\tquential File\t\t\n\t\t\t\t\n\t\u2022\tData stored row by row\tin order\t\n\t\u2022\tSimple and easy to write\t\t\n\t\u2022\tEff"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "score": 0.6362,
+        "page_id": "2"
+      },
+      {
+        "chunk_id": "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+        "score": 0.6253,
+        "page_id": "9"
+      },
+      {
+        "chunk_id": "2a311ca5-eefa-422c-a921-ff02478ff717",
+        "score": 0.6252,
+        "page_id": "9"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "page_id": "2",
+        "dense_score": 0.0,
+        "bm25_score": 0.2917,
+        "rrf_score": 0.0072,
+        "term_overlap": 0.2857,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6362,
+        "text_snippet": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports"
+      },
+      {
+        "chunk_id": "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+        "page_id": "9",
+        "dense_score": 0.0753,
+        "bm25_score": 0.2689,
+        "rrf_score": 0.0142,
+        "term_overlap": 0.1429,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6253,
+        "text_snippet": "[ Hive Client 1 ] \u2500\u2510\n[ Hive Client 2 ] \u2500\u253c\u2192 [ Remote Metastore Service ] \u2192 [ External DB ]"
+      },
+      {
+        "chunk_id": "2a311ca5-eefa-422c-a921-ff02478ff717",
+        "page_id": "9",
+        "dense_score": 0.06,
+        "bm25_score": 0.2836,
+        "rrf_score": 0.0142,
+        "term_overlap": 0.1429,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6252,
+        "text_snippet": "[ Hive Client 3 ] \u2500\u2518 (Thrift API)\n6. Workflow Diagram\nFig: Hive Architecture Workflow & Hive Executi"
+      }
+    ],
+    "page_ids": [
+      "2",
+      "9"
+    ],
+    "chunk_ids": [
+      "819d6aab-7ad3-4164-b328-696263dfc7e1",
+      "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+      "2a311ca5-eefa-422c-a921-ff02478ff717"
+    ],
+    "evidence_text": [
+      "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale\n\u2022 Multiple File Format Support - Hive supports a wide range of file formats including TextFile,\n\u2022 How Hive Works\n\u2022 Summarization Hive aggregates and condenses large volumes of raw data into meaningful\n\u2022 Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like\n\u2022 Analysis Hive enables in-depth examination of large datasets to uncover patterns, trends, and\n\u2022 HDFS for Storage Hive stores all its data in the Hadoop Distributed File System, enabling reliable\n\u2022 MapReduce for Execution Hive converts HiveQL queries into MapReduce jobs, which are then\n\u2022 Stores Metadata/Schemas in an RDBMS Hive stores table definitions, schemas, and other metadata\n\u2022 Hive Data Units",
+      "[ Hive Client 1 ] \u2500\u2510\n[ Hive Client 2 ] \u2500\u253c\u2192 [ Remote Metastore Service ] \u2192 [ External DB ]"
+    ],
+    "gate_1_result": "PASS (10 validated, 0 rejected)",
+    "answer": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query \u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale \u2022 Multiple File Format Support - Hive supports a wide range of file formats including TextFile, \u2022 How Hive Works \u2022 Summarization Hive aggregates and condenses large volumes of raw data into meaningful \u2022 Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like \u2022 Analysis Hive enables in-depth examination of large datasets to uncover patterns, trends, and \u2022 HDFS for Storage Hive stores all its data in the Hadoop Distributed File System, enabling reliable \u2022 MapReduce for Execution Hive converts HiveQL queries into MapReduce jobs, which are then \u2022 Stores Metadata/Schemas in an RDBMS Hive stores table definitions, schemas, and other metadata \u2022 Hive Data Units",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.6362,
+    "evidence_confidence": 0.6362,
+    "answerability_confidence": 0.9272,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 2]"
+    ],
+    "latency_ms": 6.8
+  },
+  {
+    "num": 2,
+    "original_question": "What is HQL?",
+    "normalized_question": "what is hql?",
+    "intent": "DEFINITION",
+    "entity": [
+      "HQL"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "c15821ce-abe4-4bbe-811f-ea76e5d5c1d1",
+        "page_id": "13",
+        "score": 1.0,
+        "text": "8.6 Sequential File\n\u2022 Data stored row by row in order\n\u2022 Simple and easy to write\n\u2022 Efficient for ful"
+      },
+      {
+        "chunk_id": "a384e55b-d54f-489e-afb9-3db6d3d60902",
+        "page_id": "13",
+        "score": 0.9607,
+        "text": "8.6\tSe\tquential File\t\t\n\t\t\t\t\n\t\u2022\tData stored row by row\tin order\t\n\t\u2022\tSimple and easy to write\t\t\n\t\u2022\tEff"
+      },
+      {
+        "chunk_id": "bce01036-977c-43bb-9df2-2b1af9e2c561",
+        "page_id": "1",
+        "score": 0.8143,
+        "text": "\u2022 Introduction to Apache Hive\n\u2022 Features of Apache Hive\n\u2022 SQL-like Query Language (HiveQL) - Hive pr"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 0.785,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "a384e55b-d54f-489e-afb9-3db6d3d60902",
+        "score": 0.584,
+        "page_id": "13"
+      },
+      {
+        "chunk_id": "c15821ce-abe4-4bbe-811f-ea76e5d5c1d1",
+        "score": 0.5545,
+        "page_id": "13"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "page_id": "1",
+        "dense_score": 1.0,
+        "bm25_score": 0.6523,
+        "rrf_score": 0.0151,
+        "term_overlap": 0.3636,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.785,
+        "text_snippet": "Unit IV: Apache Hive \u2013 HQL\n1. Introduction to Apache Hive\nApache Hive is a data warehouse and ETL to"
+      },
+      {
+        "chunk_id": "a384e55b-d54f-489e-afb9-3db6d3d60902",
+        "page_id": "13",
+        "dense_score": 0.0,
+        "bm25_score": 0.9607,
+        "rrf_score": 0.0081,
+        "term_overlap": 0.5455,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.584,
+        "text_snippet": "8.6\tSe\tquential File\t\t\n\t\t\t\t\n\t\u2022\tData stored row by row\tin order\t\n\t\u2022\tSimple and easy to write\t\t\n\t\u2022\tEff"
+      },
+      {
+        "chunk_id": "c15821ce-abe4-4bbe-811f-ea76e5d5c1d1",
+        "page_id": "13",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.3636,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.0,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.5545,
+        "text_snippet": "8.6 Sequential File\n\u2022 Data stored row by row in order\n\u2022 Simple and easy to write\n\u2022 Efficient for ful"
+      }
+    ],
+    "page_ids": [
+      "13",
+      "1"
+    ],
+    "chunk_ids": [
+      "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+      "a384e55b-d54f-489e-afb9-3db6d3d60902",
+      "c15821ce-abe4-4bbe-811f-ea76e5d5c1d1"
+    ],
+    "evidence_text": [
+      "Unit IV: Apache Hive \u2013 HQL\n1. Introduction to Apache Hive\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact with\nand query large datasets without deep knowledge of MapReduce programming.",
+      "8.6\tSe\tquential File\t\t\n\t\t\t\t\n\t\u2022\tData stored row by row\tin order\t\n\t\u2022\tSimple and easy to write\t\t\n\t\u2022\tEfficient for full data sc\tans\t\n\t\u2022\tSlow for random access\tor analytics\t\n\t\t\t\t\n9.\tHiv\te Query Language (\tHQL)\t\n\t\t\t\t\nHiv\te Q\tuery Language provides\tSQL-like operatio\tns. Tasks HQ\n\t\t\t\t\n\t\u2022\tCreate and manage table\ts and partitions.\t\n\t\t\t\t\n\t\u2022\tSupport various Relatio\tnal, Arithmetic and\tLogical Oper\n\t\t\t\t\n\t\u2022\tEvaluate functions.\t\t\n\t\t\t\t\n\t\u2022\tDownload the contents\tof a table to a local\tdirectory or re\n\t\t\t\t\n9.1\tD\tDL (Data Definition\tLanguage) Stat\tements\n\t\t\t\t\nUse\td to\tbuild and modify tables\tand other objects i\tn the databas\n\t\t\t\t\n\t\u2022\tCreate/Drop/Alter Datab\tase\t\n\t\t\t\t\n\t\u2022\tCreate/Drop/Truncate T\table\t\n\t\t\t\t\n\t\u2022\tAlter Table/Partition/Co\tlumn\t\n\t\t\t\t\n\t\u2022\tCreate/Drop/Alter View\t\t\n\t\t\t\t\n\t\u2022\tCreate/Drop/Alter Index\t\t\n\t\t\t\t\n\t\u2022\tSHOW \u2013 lists databases\t, tables, partitions,\tetc.\n\t\t\t\t\n\t\u2022\tDESCRIBE \u2013 displays t\the structure of a ta\tble or database\n\t\t\t\t\n9.2\tD\tML (Data Manipula\ttion Language)\tStatements\n\t\t\t\t\nUse\td to\tretrieve, store, modify,\tdelete and update d\tata in the data\n\t\t\t\t\n\t\u2022\tLoading files into a tabl\te.\t\n\t\t\t\t\n\t\u2022\tInserting data into Hive\tTables from querie\ts.\n\t\t\t\t\n10.\tDa\ttabase Operations\t\t\n\t\t\t\t\nA d\tatab\tase is like a container fo\tr data \u2013 a collectio\tn of tables wh\n\t\t\t\t\nCre\tate\ta database named 'ST\tUDENTS':\t\n\t\t\t\t\n\t\thive> CREATE DATABAS\tE IF NOT EXISTS\tSTUDENTS\n\t\tCOMMENT 'STUD\tENT Details'\t\n\t\t\t\t\n\t\tWITH DBPROPER\tTIES ('creator'\t= 'JOHN');\n\t\t\t\t\nDis\tplay\tall databases:\t\t\n\t\t\t\t\n\t\thive> SHOW DATABASES\t;\t\n\t\t\t\t\nFilt\ter d\tatabases using LIKE:\t\t\n\t\t\t\t\n\t\tSHOW DATABASES LIKE\t\"Stu*\";\t\n\t\t\t\t\nDes\tcrib\te a database:\t\t\n\t\t\t\t\n\t\thive> DESCRIBE DATAB\tASE STUDENTS;\t\n\t\t\t\t\n\t\t\tUnit IV \u2013 Apache\tHive (HQL) | Pa"
+    ],
+    "gate_1_result": "PASS (6 validated, 4 rejected)",
+    "answer": "Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes structured data stored in HDFS.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.785,
+    "evidence_confidence": 0.785,
+    "answerability_confidence": 0.957,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 1]"
+    ],
+    "latency_ms": 6.73
+  },
+  {
+    "num": 3,
+    "original_question": "hive functions",
+    "normalized_question": "hive functions",
+    "intent": "LIST",
+    "entity": [
+      "HIVE"
+    ],
+    "target_attribute": "functions",
+    "requested_format": "AUTO",
+    "route": "LIST",
+    "bm25_results": [
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "score": 1.0,
+        "text": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "b8911ede-763a-4e7e-b46d-869b0e892eaa",
+        "page_id": "16",
+        "score": 0.972,
+        "text": "Syntax: SELECT aggregate_function (column_name) FROM table_name;\n3. Built-in String Functions:\nFig 1"
+      },
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "score": 0.9091,
+        "text": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "score": 0.9539,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "score": 0.8425,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 0.7794,
+        "page_id": "16"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "dense_score": 0.0481,
+        "bm25_score": 0.9091,
+        "rrf_score": 0.0149,
+        "term_overlap": 0.75,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.9539,
+        "text_snippet": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.75,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8425,
+        "text_snippet": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "page_id": "16",
+        "dense_score": 1.0,
+        "bm25_score": 0.6594,
+        "rrf_score": 0.016,
+        "term_overlap": 0.9167,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.7794,
+        "text_snippet": "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+      }
+    ],
+    "page_ids": [
+      "16"
+    ],
+    "chunk_ids": [
+      "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+      "d04d0936-a98b-41fb-a620-652275849853",
+      "0d54a2da-3d7a-4019-8f4f-385b2e4a491a"
+    ],
+    "evidence_text": [
+      "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n\u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n\u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n\u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n\u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n\u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n\u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is",
+      "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al\n\t\tregardless of\tNULL values.\t\t\t\t\t\t\n\t\tThese functio\tns help in generatin\tg summarized\tinf\tormation such\tas total sales, a\tverage sala\try, minim\n\t\tmaximum va\tlues, and record cou\tnts from large\tdat\tasets.\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\tSyntax: SEL\tECT aggregate_fu\tnction (colum\tn_\tname) FROM\ttable_name;\t\t\n\t\t\t\t\t\t\t\t\t\n\t3. B\tuilt-in Strin\tg Functions:\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\tFig 10: Built-in St\tring\tFunctions Table\t\t\t\n\t1.\tString functi\tons in Hive are use\td to manipulate\t, f\tormat, and pro\tcess string (text\t) data. The\ty help in p\n\t\toperations su\tch as concatenation\t, extraction, co\tnve\trsion of case,\tand removal of\tunwanted\tspaces.\n\t2.\tlength(str): R\teturns the number\tof characters p\tres\tent in the give\tn string. The ret\turn type is\tINT.\n\t3.\treverse(str):\tReturns the string w\tith its characte\trs\tin reverse ord\ter. The return ty\tpe is STR\tING.\n\t4.\tconcat(str1,\tstr2, ...): Combines\ttwo or more st\trin\tgs into a singl\te string. The ret\turn type is\tSTRING.\n\t5.\tsubstr(str, st\tart_index): Return\ts the substring\tsta\trting from the\tspecified positi\ton until the\tend of the\n\t\tThe return ty\tpe is STRING.\t\t\t\t\t\t\n\t6.\tsubstr(str, st\tart_index, length):\tReturns a subs\ttri\tng of the speci\tfied length start\ting from th\te given po\n\t\tthe string. Th\te return type is STR\tING.\t\t\t\t\t\n\t7.\tupper(str): C\tonverts all characte\trs in the string\tto\tuppercase. Th\te return type is\tSTRING.\t\n\t8.\tlower(str): C\tonverts all characte\trs in the string\tto l\towercase. Th\te return type is\tSTRING.\t\n\t9.\ttrim(str): Re\tmoves leading and\ttrailing whitesp\tac\te characters fr\tom the string. T\the return t\type is STR\n\t10.\tltrim(str): R\temoves whitespace\tcharacters from\tth\te left side (be\tginning) of the\tstring. The\treturn typ\n\t\tSTRING.\t\t\t\t\t\t\t\n\t11.\trtrim(str): R\temoves whitespace\tcharacters fro\tm t\the right side (e\tnd) of the strin\tg. The retur\tn type is S\n\t\tThese functio\tns are widely used\tfor data cleansi\tng,\tformatting, a\tnd transformatio\tn of text d\tata before\n\t\tand reporting\t.\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\nExa\tmpl\tes\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\tF\tunction\tExam\tple\t\tResult\t\t\t\n\t\t\t\t\t\t\t\t\t\nleng\tth('\tHive')\tReturns string lengt\th\t\t4\t\t\t\n\t\t\t\t\t\t\t\t\t\nrev\terse\t('Hive')\tReverses the string\t\t\teviH\t\t\t\n\t\t\t\t\t\t\t\t\t\ncon\tcat(\t'Big','Data')\tConcatenates string\ts\t\tBigData\t\t\t\n\t\t\t\t\t\t\t\t\t\nsub\tstr('\tHadoop',2)\tExtracts substring f\trom position 2\t\tadoop\t\t\t\n\t\t\t\t\t\t\t\t\t\nsub\tstr('\tHadoop',2,3)\tExtracts 3 character\ts from position\t2\tado\t\t\t\n\t\t\t\t\t\t\t\t\t\nupp\ter('h\tive')\tConverts to upperca\tse\t\tHIVE\t\t\t\n\t\t\t\t\t\t\t\t\t\nlow\ter('\tHIVE')\tConverts to lowerca\tse\t\thive\t\t\t\n\t\t\t\t\t\t\t\t\t\ntrim\t(' H\tive ')\tRemoves spaces fro\tm both ends\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\nltri\tm('\tHive')\tRemoves left space\ts\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\nrtri\tm('H\tive ')\tRemoves right spac\tes\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\tUnit IV \u2013 Apache H\tive\t(HQL) | Page 16\t\t\t"
+    ],
+    "gate_1_result": "PASS (9 validated, 1 rejected)",
+    "answer": "  \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n  \u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n  \u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n  \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n  \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n  \u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n  \u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is\n  \u2022 NULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.9539,
+    "evidence_confidence": 0.9539,
+    "answerability_confidence": 0.9908,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 16]",
+      "[Source: Hive_Notes (1) .pdf | Page 16]"
+    ],
+    "latency_ms": 95.05
+  },
+  {
+    "num": 4,
+    "original_question": "What are the string functions in Hive?",
+    "normalized_question": "what are the string functions in hive?",
+    "intent": "LIST",
+    "entity": [
+      "Hive"
+    ],
+    "target_attribute": "string functions",
+    "requested_format": "AUTO",
+    "route": "LIST",
+    "bm25_results": [
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "score": 1.0,
+        "text": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "b8911ede-763a-4e7e-b46d-869b0e892eaa",
+        "page_id": "16",
+        "score": 0.972,
+        "text": "Syntax: SELECT aggregate_function (column_name) FROM table_name;\n3. Built-in String Functions:\nFig 1"
+      },
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "score": 0.9091,
+        "text": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "score": 0.9539,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "score": 0.9238,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 0.7731,
+        "page_id": "16"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "dense_score": 0.0481,
+        "bm25_score": 0.9091,
+        "rrf_score": 0.0149,
+        "term_overlap": 0.75,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.9539,
+        "text_snippet": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.625,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.9238,
+        "text_snippet": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "page_id": "16",
+        "dense_score": 1.0,
+        "bm25_score": 0.6594,
+        "rrf_score": 0.016,
+        "term_overlap": 0.875,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.7731,
+        "text_snippet": "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+      }
+    ],
+    "page_ids": [
+      "16"
+    ],
+    "chunk_ids": [
+      "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+      "d04d0936-a98b-41fb-a620-652275849853",
+      "0d54a2da-3d7a-4019-8f4f-385b2e4a491a"
+    ],
+    "evidence_text": [
+      "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n\u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n\u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n\u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n\u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n\u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n\u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is",
+      "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string eviH\nconcat('Big','Data') Concatenates strings BigData\nsubstr('Hadoop',2) Extracts substring from position 2 adoop\nsubstr('Hadoop',2,3) Extracts 3 characters from position 2 ado\nupper('hive') Converts to uppercase HIVE\nlower('HIVE') Converts to lowercase hive\ntrim(' Hive ') Removes spaces from both ends Hive\nltrim(' Hive') Removes left spaces Hive\nrtrim('Hive ') Removes right spaces Hive\n13. GroupBy and Having Clause"
+    ],
+    "gate_1_result": "PASS (7 validated, 3 rejected)",
+    "answer": "  \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n  \u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n  \u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n  \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n  \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n  \u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n  \u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is\n  \u2022 Function Example Result",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.9539,
+    "evidence_confidence": 0.9539,
+    "answerability_confidence": 0.9908,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 16]",
+      "[Source: Hive_Notes (1) .pdf | Page 16]"
+    ],
+    "latency_ms": 51.96
+  },
+  {
+    "num": 5,
+    "original_question": "What does length(str) do?",
+    "normalized_question": "what does length str do?",
+    "intent": "FACT",
+    "entity": [
+      "Length",
+      "Str"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "score": 1.0,
+        "text": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      },
+      {
+        "chunk_id": "b8911ede-763a-4e7e-b46d-869b0e892eaa",
+        "page_id": "16",
+        "score": 0.9931,
+        "text": "Syntax: SELECT aggregate_function (column_name) FROM table_name;\n3. Built-in String Functions:\nFig 1"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "page_id": "16",
+        "score": 0.832,
+        "text": "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "score": 0.778,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 0.6097,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "score": 0.572,
+        "page_id": "16"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "dense_score": 0.0481,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0151,
+        "term_overlap": 0.2222,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.778,
+        "text_snippet": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "page_id": "16",
+        "dense_score": 1.0,
+        "bm25_score": 0.832,
+        "rrf_score": 0.0161,
+        "term_overlap": 0.2222,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.6097,
+        "text_snippet": "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "dense_score": 0.0,
+        "bm25_score": 0.4767,
+        "rrf_score": 0.0076,
+        "term_overlap": 0.1111,
+        "entity_overlap": 0.5,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.572,
+        "text_snippet": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      }
+    ],
+    "page_ids": [
+      "16"
+    ],
+    "chunk_ids": [
+      "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+      "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+      "d04d0936-a98b-41fb-a620-652275849853"
+    ],
+    "evidence_text": [
+      "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n\u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n\u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n\u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n\u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n\u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n\u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is",
+      "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al\n\t\tregardless of\tNULL values.\t\t\t\t\t\t\n\t\tThese functio\tns help in generatin\tg summarized\tinf\tormation such\tas total sales, a\tverage sala\try, minim\n\t\tmaximum va\tlues, and record cou\tnts from large\tdat\tasets.\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\tSyntax: SEL\tECT aggregate_fu\tnction (colum\tn_\tname) FROM\ttable_name;\t\t\n\t\t\t\t\t\t\t\t\t\n\t3. B\tuilt-in Strin\tg Functions:\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\tFig 10: Built-in St\tring\tFunctions Table\t\t\t\n\t1.\tString functi\tons in Hive are use\td to manipulate\t, f\tormat, and pro\tcess string (text\t) data. The\ty help in p\n\t\toperations su\tch as concatenation\t, extraction, co\tnve\trsion of case,\tand removal of\tunwanted\tspaces.\n\t2.\tlength(str): R\teturns the number\tof characters p\tres\tent in the give\tn string. The ret\turn type is\tINT.\n\t3.\treverse(str):\tReturns the string w\tith its characte\trs\tin reverse ord\ter. The return ty\tpe is STR\tING.\n\t4.\tconcat(str1,\tstr2, ...): Combines\ttwo or more st\trin\tgs into a singl\te string. The ret\turn type is\tSTRING.\n\t5.\tsubstr(str, st\tart_index): Return\ts the substring\tsta\trting from the\tspecified positi\ton until the\tend of the\n\t\tThe return ty\tpe is STRING.\t\t\t\t\t\t\n\t6.\tsubstr(str, st\tart_index, length):\tReturns a subs\ttri\tng of the speci\tfied length start\ting from th\te given po\n\t\tthe string. Th\te return type is STR\tING.\t\t\t\t\t\n\t7.\tupper(str): C\tonverts all characte\trs in the string\tto\tuppercase. Th\te return type is\tSTRING.\t\n\t8.\tlower(str): C\tonverts all characte\trs in the string\tto l\towercase. Th\te return type is\tSTRING.\t\n\t9.\ttrim(str): Re\tmoves leading and\ttrailing whitesp\tac\te characters fr\tom the string. T\the return t\type is STR\n\t10.\tltrim(str): R\temoves whitespace\tcharacters from\tth\te left side (be\tginning) of the\tstring. The\treturn typ\n\t\tSTRING.\t\t\t\t\t\t\t\n\t11.\trtrim(str): R\temoves whitespace\tcharacters fro\tm t\the right side (e\tnd) of the strin\tg. The retur\tn type is S\n\t\tThese functio\tns are widely used\tfor data cleansi\tng,\tformatting, a\tnd transformatio\tn of text d\tata before\n\t\tand reporting\t.\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\nExa\tmpl\tes\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\tF\tunction\tExam\tple\t\tResult\t\t\t\n\t\t\t\t\t\t\t\t\t\nleng\tth('\tHive')\tReturns string lengt\th\t\t4\t\t\t\n\t\t\t\t\t\t\t\t\t\nrev\terse\t('Hive')\tReverses the string\t\t\teviH\t\t\t\n\t\t\t\t\t\t\t\t\t\ncon\tcat(\t'Big','Data')\tConcatenates string\ts\t\tBigData\t\t\t\n\t\t\t\t\t\t\t\t\t\nsub\tstr('\tHadoop',2)\tExtracts substring f\trom position 2\t\tadoop\t\t\t\n\t\t\t\t\t\t\t\t\t\nsub\tstr('\tHadoop',2,3)\tExtracts 3 character\ts from position\t2\tado\t\t\t\n\t\t\t\t\t\t\t\t\t\nupp\ter('h\tive')\tConverts to upperca\tse\t\tHIVE\t\t\t\n\t\t\t\t\t\t\t\t\t\nlow\ter('\tHIVE')\tConverts to lowerca\tse\t\thive\t\t\t\n\t\t\t\t\t\t\t\t\t\ntrim\t(' H\tive ')\tRemoves spaces fro\tm both ends\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\nltri\tm('\tHive')\tRemoves left space\ts\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\nrtri\tm('H\tive ')\tRemoves right spac\tes\t\tHive\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\tUnit IV \u2013 Apache H\tive\t(HQL) | Page 16\t\t\t"
+    ],
+    "gate_1_result": "PASS (6 validated, 4 rejected)",
+    "answer": "The return type is STRING . \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string. \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in \u2022 upper(str) : Converts all characters in the string to uppercase.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.778,
+    "evidence_confidence": 0.778,
+    "answerability_confidence": 0.9556,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 16]"
+    ],
+    "latency_ms": 6.4
+  },
+  {
+    "num": 6,
+    "original_question": "bucketing",
+    "normalized_question": "bucketing",
+    "intent": "UNKNOWN",
+    "entity": [
+      "Bucketing"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "page_id": "5",
+        "score": 1.0,
+        "text": "Feature\tPartitioning\tBucketing\n\t\t\nCardinality\tLow / Medium\tHigh\nStorage\tSub-directories\tFiles\n\t\t\nCol"
+      },
+      {
+        "chunk_id": "c353c95b-ff17-4dfb-b8c6-76ef1772f57e",
+        "page_id": "5",
+        "score": 0.8657,
+        "text": "emp_id\nKey Takeaway: Each row is assigned to a bucket based on the hash of , and\nstored as a separat"
+      },
+      {
+        "chunk_id": "e2ded881-832a-478e-935d-12d9fd53b52c",
+        "page_id": "5",
+        "score": 0.8373,
+        "text": "Step 1: Create a Bucketed Table\nCREATE TABLE Employee (emp_id INT, name STRING, salary FLOAT)\nCLUSTE"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+        "score": 0.8715,
+        "page_id": "4"
+      },
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "score": 0.6282,
+        "page_id": "5"
+      },
+      {
+        "chunk_id": "03310835-d5fd-4646-9d20-3b345be08a93",
+        "score": 0.5441,
+        "page_id": "5"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+        "page_id": "4",
+        "dense_score": 0.0,
+        "bm25_score": 0.7282,
+        "rrf_score": 0.0078,
+        "term_overlap": 0.2727,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 1.0,
+        "final_score": 0.8715,
+        "text_snippet": "4.3 Bucketing\nBucketing is another technique for managing large datasets. Data in each partition is "
+      },
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "page_id": "5",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.4545,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 1.0,
+        "final_score": 0.6282,
+        "text_snippet": "Feature\tPartitioning\tBucketing\n\t\t\nCardinality\tLow / Medium\tHigh\nStorage\tSub-directories\tFiles\n\t\t\nCol"
+      },
+      {
+        "chunk_id": "03310835-d5fd-4646-9d20-3b345be08a93",
+        "page_id": "5",
+        "dense_score": 0.0,
+        "bm25_score": 0.7161,
+        "rrf_score": 0.0077,
+        "term_overlap": 0.2727,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 1.0,
+        "final_score": 0.5441,
+        "text_snippet": "Feature Partitioning Bucketing\nCardinality Low / Medium High\nStorage Sub-directories Files\nColumns M"
+      }
+    ],
+    "page_ids": [
+      "5",
+      "4"
+    ],
+    "chunk_ids": [
+      "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+      "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+      "03310835-d5fd-4646-9d20-3b345be08a93"
+    ],
+    "evidence_text": [
+      "4.3 Bucketing\nBucketing is another technique for managing large datasets. Data in each partition is divided into\nbuckets based on a hash function of a column.",
+      "Feature\tPartitioning\tBucketing\n\t\t\nCardinality\tLow / Medium\tHigh\nStorage\tSub-directories\tFiles\n\t\t\nColumns\tMultiple columns\tSingle column\nBest For\tFiltering queries\tJoins & sampling\n\t\t\nData Distribution\tLogical grouping\tHash-based distribution\nExample\tPARTITIONED BY (year,\tCLUSTERED BY (user_id)\n\tmonth, day)\tINTO 8 BUCKETS\n\t\t"
+    ],
+    "gate_1_result": "PASS (5 validated, 5 rejected)",
+    "answer": "Bucketing is another technique for managing large datasets.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.8715,
+    "evidence_confidence": 0.8715,
+    "answerability_confidence": 0.9743,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 4]"
+    ],
+    "latency_ms": 3.33
+  },
+  {
+    "num": 7,
+    "original_question": "What is bucketing?",
+    "normalized_question": "what is bucketing?",
+    "intent": "DEFINITION",
+    "entity": [
+      "Bucketing"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "page_id": "5",
+        "score": 1.0,
+        "text": "Feature\tPartitioning\tBucketing\n\t\t\nCardinality\tLow / Medium\tHigh\nStorage\tSub-directories\tFiles\n\t\t\nCol"
+      },
+      {
+        "chunk_id": "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+        "page_id": "4",
+        "score": 0.8749,
+        "text": "4.3 Bucketing\nBucketing is another technique for managing large datasets. Data in each partition is "
+      },
+      {
+        "chunk_id": "03310835-d5fd-4646-9d20-3b345be08a93",
+        "page_id": "5",
+        "score": 0.7802,
+        "text": "Feature Partitioning Bucketing\nCardinality Low / Medium High\nStorage Sub-directories Files\nColumns M"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+        "score": 0.8561,
+        "page_id": "4"
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "score": 0.7563,
+        "page_id": "2"
+      },
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "score": 0.5677,
+        "page_id": "5"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+        "page_id": "4",
+        "dense_score": 0.0,
+        "bm25_score": 0.8749,
+        "rrf_score": 0.0081,
+        "term_overlap": 0.3077,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8561,
+        "text_snippet": "4.3 Bucketing\nBucketing is another technique for managing large datasets. Data in each partition is "
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "page_id": "2",
+        "dense_score": 0.0,
+        "bm25_score": 0.5757,
+        "rrf_score": 0.0072,
+        "term_overlap": 0.3077,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.6,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.7563,
+        "text_snippet": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports"
+      },
+      {
+        "chunk_id": "cc683a63-1396-4ffd-ad97-c8436cf8fc52",
+        "page_id": "5",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.3846,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.5677,
+        "text_snippet": "Feature\tPartitioning\tBucketing\n\t\t\nCardinality\tLow / Medium\tHigh\nStorage\tSub-directories\tFiles\n\t\t\nCol"
+      }
+    ],
+    "page_ids": [
+      "2",
+      "5",
+      "4"
+    ],
+    "chunk_ids": [
+      "ca701d0c-6b20-4a3b-82aa-87922752ba54",
+      "819d6aab-7ad3-4164-b328-696263dfc7e1",
+      "cc683a63-1396-4ffd-ad97-c8436cf8fc52"
+    ],
+    "evidence_text": [
+      "4.3 Bucketing\nBucketing is another technique for managing large datasets. Data in each partition is divided into\nbuckets based on a hash function of a column.",
+      "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale\n\u2022 Multiple File Format Support - Hive supports a wide range of file formats including TextFile,\n\u2022 How Hive Works\n\u2022 Summarization Hive aggregates and condenses large volumes of raw data into meaningful\n\u2022 Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like\n\u2022 Analysis Hive enables in-depth examination of large datasets to uncover patterns, trends, and\n\u2022 HDFS for Storage Hive stores all its data in the Hadoop Distributed File System, enabling reliable\n\u2022 MapReduce for Execution Hive converts HiveQL queries into MapReduce jobs, which are then\n\u2022 Stores Metadata/Schemas in an RDBMS Hive stores table definitions, schemas, and other metadata\n\u2022 Hive Data Units"
+    ],
+    "gate_1_result": "PASS (7 validated, 3 rejected)",
+    "answer": "Bucketing is another technique for managing large datasets.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.8561,
+    "evidence_confidence": 0.8561,
+    "answerability_confidence": 0.9712,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 4]"
+    ],
+    "latency_ms": 3.65
+  },
+  {
+    "num": 8,
+    "original_question": "hive layer",
+    "normalized_question": "hive layer",
+    "intent": "UNKNOWN",
+    "entity": [
+      "HIVE"
+    ],
+    "target_attribute": "architecture",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "f87b48a7-e9f1-4666-b96c-2d159b8bc0df",
+        "page_id": "9",
+        "score": 1.0,
+        "text": "Working Flow of Hive Architecture\nStep 1: USER The process begins when a user submits a HiveQL query"
+      },
+      {
+        "chunk_id": "515ede37-a821-4515-aca3-427a316abde1",
+        "page_id": "6",
+        "score": 0.9263,
+        "text": "HIVE LAYER\n1. Command Line Interface (CLI) - The CLI is the simplest way to interact with Hive, allo"
+      },
+      {
+        "chunk_id": "f95ac630-91ac-4b14-8c1d-6310e63b6f77",
+        "page_id": "6",
+        "score": 0.6257,
+        "text": "4.5 Difference between Partitioning and B\tucketin\n\t\nFig 2: Difference between\tPartitioning\n\t\n5. Hive"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "515ede37-a821-4515-aca3-427a316abde1",
+        "score": 1.0153,
+        "page_id": "6"
+      },
+      {
+        "chunk_id": "f87b48a7-e9f1-4666-b96c-2d159b8bc0df",
+        "score": 1.0,
+        "page_id": "9"
+      },
+      {
+        "chunk_id": "22c35dea-8ad7-4418-a84a-09cd031ad7f6",
+        "score": 0.8413,
+        "page_id": "7"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "515ede37-a821-4515-aca3-427a316abde1",
+        "page_id": "6",
+        "dense_score": 0.0,
+        "bm25_score": 0.9263,
+        "rrf_score": 0.0081,
+        "term_overlap": 1.0,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 1.0,
+        "final_score": 1.0153,
+        "text_snippet": "HIVE LAYER\n1. Command Line Interface (CLI) - The CLI is the simplest way to interact with Hive, allo"
+      },
+      {
+        "chunk_id": "f87b48a7-e9f1-4666-b96c-2d159b8bc0df",
+        "page_id": "9",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 1.0,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 1.0,
+        "text_snippet": "Working Flow of Hive Architecture\nStep 1: USER The process begins when a user submits a HiveQL query"
+      },
+      {
+        "chunk_id": "22c35dea-8ad7-4418-a84a-09cd031ad7f6",
+        "page_id": "7",
+        "dense_score": 0.0,
+        "bm25_score": 0.5792,
+        "rrf_score": 0.0077,
+        "term_overlap": 0.6364,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8413,
+        "text_snippet": "\u2022 Web Interface - Hive provides a browser-based GUI that allows users to submit and monitor queries\n"
+      }
+    ],
+    "page_ids": [
+      "7",
+      "6",
+      "9"
+    ],
+    "chunk_ids": [
+      "515ede37-a821-4515-aca3-427a316abde1",
+      "f87b48a7-e9f1-4666-b96c-2d159b8bc0df",
+      "22c35dea-8ad7-4418-a84a-09cd031ad7f6"
+    ],
+    "evidence_text": [
+      "HIVE LAYER\n1. Command Line Interface (CLI) - The CLI is the simplest way to interact with Hive, allowing users\nto write and execute HiveQL queries directly from the terminal. It is primarily used by developers and\nadministrators for quick querying and testing.\n2. Web Interface - Hive provides a browser-based GUI that allows users to submit and monitor queries\nwithout using the command line. It makes Hive more accessible to non-technical users who prefer a\nvisual interface.\n3. JDBC (Java Database Connectivity) - JDBC is a Java-based API that allows Java applications to\nconnect and interact with Hive programmatically. It enables seamless integration of Hive with Java-\nbased tools, applications, and BI platforms.\n4. ODBC (Open Database Connectivity) - ODBC is a standard API that allows various applications\nand tools to connect to Hive regardless of the programming language. It enables tools like Tableau,\nExcel, and other BI software to query Hive data directly.\n5. Thrift Server - The Thrift Server is a cross-language service that allows clients written in different\nprogramming languages such as Python, PHP, C++, and Java to communicate with Hive. It acts as a\nremote procedure call framework for accessing Hive over a network.\n6. Driver (Compiler, Optimizer, Executor) - The Driver is the core component of Hive that manages\nthe lifecycle of a HiveQL query through three stages:\nCompiler \u2014 Parses and converts the HiveQL query into an execution plan.\n\uf0b7\n\uf0b7 Optimizer \u2014 Refines the execution plan to improve efficiency and reduce resource usage.\n\uf0b7 Executor \u2014 Executes the final optimized plan by submitting jobs to the Hadoop layer.\n7. Metastore - The Metastore is a relational database (typically MySQL or Derby) that stores metadata\nabout Hive tables, such as schema definitions, column names, data types, partitions, and storage\nlocations. It acts as a central repository that the Driver refers to while compiling queries.",
+      "Working Flow of Hive Architecture\nStep 1: USER The process begins when a user submits a HiveQL query through any available interface.\nStep 2: User Interface Layer (CLI / Web / JDBC / ODBC) The query is received through one of\nHive's interfaces \u2014 Command Line, Web Browser, JDBC, or ODBC \u2014 depending on how the user is\nconnected to Hive.\nStep 3: Thrift Server (Compiler \u2192 Optimizer \u2192 Executor) The query is passed to the Thrift Server,\nwhich forwards it to the Driver. The Driver then processes the query in three stages:\n\uf0b7 Compiler \u2014 Parses and converts the query into a logical plan.\n\uf0b7 Optimizer \u2014 Refines and optimizes the logical plan for better performance.\nExecutor \u2014 Prepares the final execution plan to be submitted to Hadoop.\n\uf0b7\nStep 4: Metastore (Table Metadata) Before execution, the Driver consults the Metastore to fetch\nmetadata such as table schema, column names, data types, and partition details needed to process the\nquery correctly.\nStep 5: USER After execution, the final results are returned back to the user."
+    ],
+    "gate_1_result": "PASS (4 validated, 6 rejected)",
+    "answer": "Driver (Compiler, Optimizer, Executor) - The Driver is the core component of Hive that manages the lifecycle of a HiveQL query through three stages: Compiler \u2014 Parses and converts the HiveQL query into an execution plan. \uf0b7 \uf0b7 Optimizer \u2014 Refines the execution plan to improve efficiency and reduce resource usage. \uf0b7 Executor \u2014 Executes the final optimized plan by submitting jobs to the Hadoop layer. 7.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 1.0153,
+    "evidence_confidence": 1.0,
+    "answerability_confidence": 1.0,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 6]"
+    ],
+    "latency_ms": 5.53
+  },
+  {
+    "num": 9,
+    "original_question": "What are the features of Hive?",
+    "normalized_question": "what are the features of hive?",
+    "intent": "LIST",
+    "entity": [
+      "Hive"
+    ],
+    "target_attribute": "features",
+    "requested_format": "AUTO",
+    "route": "LIST",
+    "bm25_results": [
+      {
+        "chunk_id": "bce01036-977c-43bb-9df2-2b1af9e2c561",
+        "page_id": "1",
+        "score": 1.0,
+        "text": "\u2022 Introduction to Apache Hive\n\u2022 Features of Apache Hive\n\u2022 SQL-like Query Language (HiveQL) - Hive pr"
+      },
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "score": 0.6931,
+        "text": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "07d53d7d-c91f-415f-93b3-0e3697945ac3",
+        "page_id": "1",
+        "score": 0.5957,
+        "text": "1.1 How Apache Hive was Introduced Apache Hive is a data warehouse and ETL tool built on top of the "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "score": 0.8436,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "score": 0.6913,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "score": 0.6827,
+        "page_id": "2"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "dense_score": 0.0,
+        "bm25_score": 0.6931,
+        "rrf_score": 0.0081,
+        "term_overlap": 0.5,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8436,
+        "text_snippet": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "page_id": "1",
+        "dense_score": 0.0662,
+        "bm25_score": 0.3652,
+        "rrf_score": 0.0146,
+        "term_overlap": 0.5,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6913,
+        "text_snippet": "format for their data storage and query performance requirements. 3. How Hive Works The three main t"
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "page_id": "2",
+        "dense_score": 0.0,
+        "bm25_score": 0.3886,
+        "rrf_score": 0.0076,
+        "term_overlap": 0.5,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6827,
+        "text_snippet": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports"
+      }
+    ],
+    "page_ids": [
+      "2",
+      "1"
+    ],
+    "chunk_ids": [
+      "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+      "197560b9-f4b6-4196-b0f6-554afaa70050",
+      "819d6aab-7ad3-4164-b328-696263dfc7e1"
+    ],
+    "evidence_text": [
+      "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact\nwith and query large datasets without deep knowledge of MapReduce programming.\n2. Features of Apache Hive\n1. SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\nallowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and\ndevelopers with SQL knowledge to work with big data without learning complex MapReduce code.\n2. Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop\nDistributed File System (HDFS). This allows it to handle and process massive volumes of data across\ndistributed clusters efficiently.\n3. Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the\nschema only when data is read. This provides greater flexibility, as raw data can be stored first and\nstructured later during querying.\n4. Batch Processing - Hive is optimized for batch processing of large datasets rather than real-time or\ntransactional queries. It converts HiveQL queries into MapReduce jobs, making it suitable for\nprocessing high-volume data in scheduled or bulk operations.\n5. Integration with Hadoop Ecosystem - Hive seamlessly integrates with other tools in the Hadoop\necosystem such as Pig, Spark, HBase, and HDFS. This interoperability allows users to build\ncomprehensive data pipelines and workflows within the same ecosystem.\n6. User Defined Functions (UDFs) - Hive allows users to write custom functions, known as UDFs, to\nextend its built-in functionality. These can be written in Java or Python and plugged into HiveQL\nqueries to handle complex or specific data transformations.\n7. Data Warehouse Functionality - Hive is designed to function as a data warehouse, supporting data\nsummarization, aggregation, and analytical querying on large datasets. It enables orga",
+      "\u2022 Introduction to Apache Hive\n\u2022 Features of Apache Hive\n\u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\n\u2022 Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop\n\u2022 Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the\n\u2022 Batch Processing - Hive is optimized for batch processing of large datasets rather than real-time or\n\u2022 Integration with Hadoop Ecosystem - Hive seamlessly integrates with other tools in the Hadoop\n\u2022 User Defined Functions (UDFs) - Hive allows users to write custom functions, known as UDFs, to\n\u2022 Data Warehouse Functionality - Hive is designed to function as a data warehouse, supporting data"
+    ],
+    "gate_1_result": "PASS (2 validated, 8 rejected)",
+    "answer": "  \u2022 How Apache Hive was Introduced\n  \u2022 Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\n  \u2022 structured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact\n  \u2022 with and query large datasets without deep knowledge of MapReduce programming.\n  \u2022 Features of Apache Hive\n  \u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\n  \u2022 allowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and\n  \u2022 developers with SQL knowledge to work with big data without learning complex MapReduce code.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.8436,
+    "evidence_confidence": 0.8436,
+    "answerability_confidence": 0.9687,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 1]"
+    ],
+    "latency_ms": 11.47
+  },
+  {
+    "num": 10,
+    "original_question": "How was Apache Hive introduced?",
+    "normalized_question": "how was apache hive introduced?",
+    "intent": "EXPLANATION",
+    "entity": [
+      "Apache",
+      "Hive"
+    ],
+    "target_attribute": "introduction",
+    "requested_format": "AUTO",
+    "route": "SUMMARY",
+    "bm25_results": [
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "page_id": "1",
+        "score": 1.0,
+        "text": "Unit IV: Apache Hive \u2013 HQL\n1. Introduction to Apache Hive\nApache Hive is a data warehouse and ETL to"
+      },
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "score": 0.9989,
+        "text": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "07d53d7d-c91f-415f-93b3-0e3697945ac3",
+        "page_id": "1",
+        "score": 0.8721,
+        "text": "1.1 How Apache Hive was Introduced Apache Hive is a data warehouse and ETL tool built on top of the "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 0.85,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "score": 0.8131,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "score": 0.7227,
+        "page_id": "1"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "page_id": "1",
+        "dense_score": 1.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0163,
+        "term_overlap": 0.3333,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.85,
+        "text_snippet": "Unit IV: Apache Hive \u2013 HQL\n1. Introduction to Apache Hive\nApache Hive is a data warehouse and ETL to"
+      },
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "dense_score": 0.0,
+        "bm25_score": 0.9989,
+        "rrf_score": 0.0081,
+        "term_overlap": 0.5556,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8131,
+        "text_snippet": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "page_id": "1",
+        "dense_score": 0.0662,
+        "bm25_score": 0.6471,
+        "rrf_score": 0.015,
+        "term_overlap": 0.3333,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.7227,
+        "text_snippet": "format for their data storage and query performance requirements. 3. How Hive Works The three main t"
+      }
+    ],
+    "page_ids": [
+      "1"
+    ],
+    "chunk_ids": [
+      "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+      "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+      "197560b9-f4b6-4196-b0f6-554afaa70050"
+    ],
+    "evidence_text": [
+      "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact\nwith and query large datasets without deep knowledge of MapReduce programming.\n2. Features of Apache Hive\n1. SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\nallowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and\ndevelopers with SQL knowledge to work with big data without learning complex MapReduce code.\n2. Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop\nDistributed File System (HDFS). This allows it to handle and process massive volumes of data across\ndistributed clusters efficiently.\n3. Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the\nschema only when data is read. This provides greater flexibility, as raw data can be stored first and\nstructured later during querying.\n4. Batch Processing - Hive is optimized for batch processing of large datasets rather than real-time or\ntransactional queries. It converts HiveQL queries into MapReduce jobs, making it suitable for\nprocessing high-volume data in scheduled or bulk operations.\n5. Integration with Hadoop Ecosystem - Hive seamlessly integrates with other tools in the Hadoop\necosystem such as Pig, Spark, HBase, and HDFS. This interoperability allows users to build\ncomprehensive data pipelines and workflows within the same ecosystem.\n6. User Defined Functions (UDFs) - Hive allows users to write custom functions, known as UDFs, to\nextend its built-in functionality. These can be written in Java or Python and plugged into HiveQL\nqueries to handle complex or specific data transformations.\n7. Data Warehouse Functionality - Hive is designed to function as a data warehouse, supporting data\nsummarization, aggregation, and analytical querying on large datasets. It enables orga",
+      "1.1 How Apache Hive was Introduced Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes structured data stored in HDFS. It provides an SQL-like interface, enabling users to easily interact with and query large datasets without deep knowledge of MapReduce programming. 2. Features of Apache Hive 1. SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL, allowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and developers with SQL knowledge to work with big data without learning complex MapReduce code. 2. Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop Distributed File System (HDFS). This allows it to handle and process massive volumes of data across distributed clusters efficiently. 3. Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the schema only when data is read. This provides greater flexibility, as raw data can be stored first and structured later during querying. 4. Batch Processing - Hive is optimized for batch processing of large datasets rather than real-time or transactional queries. It converts HiveQL queries into MapReduce jobs, making it suitable for processing high-volume data in scheduled or bulk operations. 5. Integration with Hadoop Ecosystem - Hive seamlessly integrates with other tools in the Hadoop ecosystem such as Pig, Spark, HBase, and HDFS. This interoperability allows users to build comprehensive data pipelines and workflows within the same ecosystem. 6. User Defined Functions (UDFs) - Hive allows users to write custom functions, known as UDFs, to extend its built-in functionality. These can be written in Java or Python and plugged into HiveQL queries to handle complex or specific data transformations. 7. Data Warehouse Functionality - Hive is designed to function as a data warehouse, supporting data summarization, aggregation, and analytical querying on large datasets. It enables organizations to store and analyze historical data for business intelligence and reporting purposes. 8. Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query performance on large tables. Partitioning divides data into subdirectories based on column values, while bucketing distributes data into fixed-size files, reducing the amount of data scanned during queries. 9. Supports Large Data Analysis - Hive is specifically built to analyze and process petabyte-scale datasets distributed across a Hadoop cluster. It is well-suited for use cases like log analysis, data mining, and large-scale reporting where massive data volumes need to be processed. 10. Multiple File Format Support - Hive supports a wide range of file formats including TextFile, SequenceFile, ORC, Parquet, and Avro. This flexibility allows users to choose the most efficient format for their data storage and query performance requirements. 3. How Hive Works The three main tasks performed by Apache Hive are: \uf0a7 Summarization \uf0a7 Querying \uf0a7 Analysis 1. Summarization Hive aggregates and condenses large volumes of raw data into meaningful summaries for reporting and analysis. 2. Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like query language."
+    ],
+    "gate_1_result": "PASS (2 validated, 8 rejected)",
+    "answer": "\nPage 1\n------\n1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS.\nIt provides an SQL-like interface, enabling users to easily interact\nwith and query large datasets without deep knowledge of MapReduce programming.\n2.\nFeatures of Apache Hive\n1.\nSQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\nallowing users to write familiar SQL-like queries on large datasets.\nThis makes it easier for analysts and\ndevelopers with SQL knowledge to work with big data without learning complex MapReduce code.\n2.",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.8131,
+    "evidence_confidence": 0.8131,
+    "answerability_confidence": 0.9626,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 1]"
+    ],
+    "latency_ms": 9.29
+  },
+  {
+    "num": 11,
+    "original_question": "What are the advantages of Hive?",
+    "normalized_question": "what are the advantages of hive?",
+    "intent": "LIST",
+    "entity": [
+      "Hive"
+    ],
+    "target_attribute": "advantages",
+    "requested_format": "AUTO",
+    "route": "LIST",
+    "bm25_results": [
+      {
+        "chunk_id": "bce01036-977c-43bb-9df2-2b1af9e2c561",
+        "page_id": "1",
+        "score": 1.0,
+        "text": "\u2022 Introduction to Apache Hive\n\u2022 Features of Apache Hive\n\u2022 SQL-like Query Language (HiveQL) - Hive pr"
+      },
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "score": 0.6931,
+        "text": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "07d53d7d-c91f-415f-93b3-0e3697945ac3",
+        "page_id": "1",
+        "score": 0.5957,
+        "text": "1.1 How Apache Hive was Introduced Apache Hive is a data warehouse and ETL tool built on top of the "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "score": 0.7186,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "score": 0.6663,
+        "page_id": "1"
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "score": 0.6577,
+        "page_id": "2"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+        "page_id": "1",
+        "dense_score": 0.0,
+        "bm25_score": 0.6931,
+        "rrf_score": 0.0081,
+        "term_overlap": 0.3333,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.7186,
+        "text_snippet": "1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the "
+      },
+      {
+        "chunk_id": "197560b9-f4b6-4196-b0f6-554afaa70050",
+        "page_id": "1",
+        "dense_score": 0.0662,
+        "bm25_score": 0.3652,
+        "rrf_score": 0.0146,
+        "term_overlap": 0.3333,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6663,
+        "text_snippet": "format for their data storage and query performance requirements. 3. How Hive Works The three main t"
+      },
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "page_id": "2",
+        "dense_score": 0.0,
+        "bm25_score": 0.3886,
+        "rrf_score": 0.0076,
+        "term_overlap": 0.3333,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6577,
+        "text_snippet": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports"
+      }
+    ],
+    "page_ids": [
+      "2",
+      "1"
+    ],
+    "chunk_ids": [
+      "809fae45-495c-4af3-bb55-3d6aa4b36a22",
+      "197560b9-f4b6-4196-b0f6-554afaa70050",
+      "819d6aab-7ad3-4164-b328-696263dfc7e1"
+    ],
+    "evidence_text": [],
+    "gate_1_result": "PASS (0 validated, 10 rejected)",
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic.",
+    "gate_2_result": "FAIL",
+    "retrieval_confidence": 0.0,
+    "evidence_confidence": 0.0,
+    "answerability_confidence": 0.0,
+    "final_confidence": "NO_ANSWER",
+    "citations": [],
+    "latency_ms": 6.04
+  },
+  {
+    "num": 12,
+    "original_question": "Give the string functions in Hive in a table.",
+    "normalized_question": "give the string functions in hive in a table.",
+    "intent": "LIST",
+    "entity": [
+      "Hive",
+      "Table"
+    ],
+    "target_attribute": "string functions",
+    "requested_format": "TABLE",
+    "route": "TABLE",
+    "bm25_results": [
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "score": 1.0,
+        "text": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "b8911ede-763a-4e7e-b46d-869b0e892eaa",
+        "page_id": "16",
+        "score": 0.988,
+        "text": "Syntax: SELECT aggregate_function (column_name) FROM table_name;\n3. Built-in String Functions:\nFig 1"
+      },
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "score": 0.9091,
+        "text": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "score": 0.8723,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "score": 0.8432,
+        "page_id": "16"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 0.7973,
+        "page_id": "16"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+        "page_id": "16",
+        "dense_score": 0.0481,
+        "bm25_score": 0.9091,
+        "rrf_score": 0.0149,
+        "term_overlap": 0.7059,
+        "entity_overlap": 0.5,
+        "attribute_overlap": 1.0,
+        "heading_score": 1.0,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8723,
+        "text_snippet": "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process "
+      },
+      {
+        "chunk_id": "d04d0936-a98b-41fb-a620-652275849853",
+        "page_id": "16",
+        "dense_score": 0.0,
+        "bm25_score": 1.0,
+        "rrf_score": 0.0082,
+        "term_overlap": 0.5882,
+        "entity_overlap": 0.5,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.8,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.8432,
+        "text_snippet": "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string e"
+      },
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "page_id": "16",
+        "dense_score": 1.0,
+        "bm25_score": 0.7304,
+        "rrf_score": 0.016,
+        "term_overlap": 0.9412,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 1.0,
+        "heading_score": 0.1,
+        "section_score": 0.0,
+        "phrase_match": 0.5,
+        "final_score": 0.7973,
+        "text_snippet": "\t8.\tNULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+      }
+    ],
+    "page_ids": [
+      "16"
+    ],
+    "chunk_ids": [
+      "319c026f-d341-4cb8-ad22-0d3dd352ff89",
+      "d04d0936-a98b-41fb-a620-652275849853",
+      "0d54a2da-3d7a-4019-8f4f-385b2e4a491a"
+    ],
+    "evidence_text": [
+      "\u2022 Built-in String Functions:\n\u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n\u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n\u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n\u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n\u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n\u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n\u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is",
+      "Function Example Result\nlength('Hive') Returns string length 4\nreverse('Hive') Reverses the string eviH\nconcat('Big','Data') Concatenates strings BigData\nsubstr('Hadoop',2) Extracts substring from position 2 adoop\nsubstr('Hadoop',2,3) Extracts 3 characters from position 2 ado\nupper('hive') Converts to uppercase HIVE\nlower('HIVE') Converts to lowercase hive\ntrim(' Hive ') Removes spaces from both ends Hive\nltrim(' Hive') Removes left spaces Hive\nrtrim('Hive ') Removes right spaces Hive\n13. GroupBy and Having Clause"
+    ],
+    "gate_1_result": "PASS (9 validated, 1 rejected)",
+    "answer": "\nTable\n-----\n\n| Item / Function | Description |\n| --- | --- |\n| NULL value | s are ignored by SU M (), AVG (), MI N (), and MA X (). However, COUNT (* ) counts al |\n| regardless of | NULL values. |\n| These functio | ns help in generatin g summarized inf ormation such as total sales, a verage sala ry, minim |\n| maximum va | lues, and record cou nts from large dat asets. |\n| Syntax | SEL\tECT aggregate_fu\tnction (colum\tn_\tname) FROM\ttable_name; |\n| B\tuilt-in Strin\tg Functions |  |\n| Fig 10 | Built-in St\tring\tFunctions Table |\n| String functi | ons in Hive are use d to manipulate , f ormat, and pro cess string (text ) data. The y help in p |\n| operations su | ch as concatenation , extraction, co nve rsion of case, and removal of unwanted spaces. |\n| length(str) | R\teturns the number\tof characters p\tres\tent in the give\tn string. The ret\turn type is\tINT. |\n| reverse(str) | Returns the string w\tith its characte\trs\tin reverse ord\ter. The return ty\tpe is STR\tING. |\n| concat(str1,\tstr2, ...) | Combines\ttwo or more st\trin\tgs into a singl\te string. The ret\turn type is\tSTRING. |\n| substr(str, st\tart_index) | Return\ts the substring\tsta\trting from the\tspecified positi\ton until the\tend of the |\n| The return ty | pe is STRING. |\n| substr(str, st\tart_index, length) | Returns a subs\ttri\tng of the speci\tfied length start\ting from th\te given po |\n| the string. Th | e return type is STR ING. |\n| upper(str) | C\tonverts all characte\trs in the string\tto\tuppercase. Th\te return type is\tSTRING. |\n| lower(str) | C\tonverts all characte\trs in the string\tto l\towercase. Th\te return type is\tSTRING. |\n| trim(str) | Re\tmoves leading and\ttrailing whitesp\tac\te characters fr\tom the string. T\the return t\type is STR |\n| ltrim(str) | R\temoves whitespace\tcharacters from\tth\te left side (be\tginning) of the\tstring. The\treturn typ |\n| STRING. | - |\n| rtrim(str) | R\temoves whitespace\tcharacters fro\tm t\the right side (e\tnd) of the strin\tg. The retur\tn type is S |\n| These functio | ns are widely used for data cleansi ng, formatting, a nd transformatio n of text d ata before |\n| and reporting | . |\n| Exa | mpl es |\n| F | unction Exam ple Result |\n| leng | th(' Hive') Returns string lengt h 4 |\n| rev | erse ('Hive') Reverses the string eviH |\n| con | cat( 'Big','Data') Concatenates string s BigData |\n| sub | str(' Hadoop',2) Extracts substring f rom position 2 adoop |\n| sub | str(' Hadoop',2,3) Extracts 3 character s from position 2 ado |\n| upp | er('h ive') Converts to upperca se HIVE |\n| low | er(' HIVE') Converts to lowerca se hive |\n| trim | (' H ive ') Removes spaces fro m both ends Hive |\n| ltri | m(' Hive') Removes left space s Hive |\n| rtri | m('H ive ') Removes right spac es Hive |\n| Unit IV \u2013 Apache H | ive (HQL) | Page 16 |\n",
+    "gate_2_result": "PASS",
+    "retrieval_confidence": 0.8723,
+    "evidence_confidence": 0.8723,
+    "answerability_confidence": 0.9745,
+    "final_confidence": "HIGH",
+    "citations": [
+      "[Source: Hive_Notes (1) .pdf | Page 16]"
+    ],
+    "latency_ms": 17.76
+  },
+  {
+    "num": 13,
+    "original_question": "What is quantum entanglement in Hive?",
+    "normalized_question": "what is quantum entanglement in hive?",
+    "intent": "DEFINITION",
+    "entity": [
+      "Hive"
+    ],
+    "target_attribute": "definition",
+    "requested_format": "AUTO",
+    "route": "FACT_QA",
+    "bm25_results": [
+      {
+        "chunk_id": "20757d84-55b7-4359-a439-76f139f83908",
+        "page_id": "10",
+        "score": 1.0,
+        "text": "7.1 Primitive Data Type\n\uf0b7 NameNode \u2014 Manages metadata, i.e., it keeps track of where data is stored "
+      },
+      {
+        "chunk_id": "10c8d61d-63fa-48d9-9df1-954e70de7bb5",
+        "page_id": "13",
+        "score": 0.701,
+        "text": "9.1 DDL (Data Definition Language) Statements\nUsed to build and modify tables and other objects in t"
+      },
+      {
+        "chunk_id": "a384e55b-d54f-489e-afb9-3db6d3d60902",
+        "page_id": "13",
+        "score": 0.5709,
+        "text": "8.6\tSe\tquential File\t\t\n\t\t\t\t\n\t\u2022\tData stored row by row\tin order\t\n\t\u2022\tSimple and easy to write\t\t\n\t\u2022\tEff"
+      }
+    ],
+    "dense_results": [
+      {
+        "chunk_id": "0d54a2da-3d7a-4019-8f4f-385b2e4a491a",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "609f5fb5-d8db-4481-9bd1-7746b69cb030",
+        "score": 1.0
+      },
+      {
+        "chunk_id": "57b48670-1f9f-42f4-80ee-9cb35074bfc0",
+        "score": 0.0867
+      }
+    ],
+    "hybrid_results": [
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "score": 0.6383,
+        "page_id": "2"
+      },
+      {
+        "chunk_id": "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+        "score": 0.6188,
+        "page_id": "9"
+      },
+      {
+        "chunk_id": "2a311ca5-eefa-422c-a921-ff02478ff717",
+        "score": 0.6187,
+        "page_id": "9"
+      }
+    ],
+    "final_ranked_results": [
+      {
+        "chunk_id": "819d6aab-7ad3-4164-b328-696263dfc7e1",
+        "page_id": "2",
+        "dense_score": 0.0,
+        "bm25_score": 0.2917,
+        "rrf_score": 0.0072,
+        "term_overlap": 0.3,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6383,
+        "text_snippet": "\u2022 Partitioning and Bucketing - Hive supports partitioning and bucketing to optimize query\n\u2022 Supports"
+      },
+      {
+        "chunk_id": "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+        "page_id": "9",
+        "dense_score": 0.0753,
+        "bm25_score": 0.2689,
+        "rrf_score": 0.0142,
+        "term_overlap": 0.1,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6188,
+        "text_snippet": "[ Hive Client 1 ] \u2500\u2510\n[ Hive Client 2 ] \u2500\u253c\u2192 [ Remote Metastore Service ] \u2192 [ External DB ]"
+      },
+      {
+        "chunk_id": "2a311ca5-eefa-422c-a921-ff02478ff717",
+        "page_id": "9",
+        "dense_score": 0.06,
+        "bm25_score": 0.2836,
+        "rrf_score": 0.0142,
+        "term_overlap": 0.1,
+        "entity_overlap": 1.0,
+        "attribute_overlap": 0.0,
+        "heading_score": 0.85,
+        "section_score": 0.25,
+        "phrase_match": 0.5,
+        "final_score": 0.6187,
+        "text_snippet": "[ Hive Client 3 ] \u2500\u2518 (Thrift API)\n6. Workflow Diagram\nFig: Hive Architecture Workflow & Hive Executi"
+      }
+    ],
+    "page_ids": [
+      "2",
+      "9"
+    ],
+    "chunk_ids": [
+      "819d6aab-7ad3-4164-b328-696263dfc7e1",
+      "07a12884-cd5c-41c8-8e69-80ef0dd9d021",
+      "2a311ca5-eefa-422c-a921-ff02478ff717"
+    ],
+    "evidence_text": [],
+    "gate_1_result": "PASS (0 validated, 10 rejected)",
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic.",
+    "gate_2_result": "FAIL",
+    "retrieval_confidence": 0.0,
+    "evidence_confidence": 0.0,
+    "answerability_confidence": 0.0,
+    "final_confidence": "NO_ANSWER",
+    "citations": [],
+    "latency_ms": 5.0
+  }
+]

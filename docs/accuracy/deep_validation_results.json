@@ -1,0 +1,724 @@
+[
+  {
+    "id": "Q_DEF_1",
+    "question": "What is Hive?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Introduction",
+        "valid": false
+      },
+      {
+        "section": "Introduction to Apache Hive",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "0a6847b9-a831-4cf0-bc7a-f144977f6329",
+        "bm25_rank": 25,
+        "dense_rank": 2,
+        "rrf_rank": 14,
+        "final_rank": -1,
+        "failing_stage": "E"
+      }
+    ],
+    "failure_stage": "E",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "\u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL, | \u2022 Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop",
+        "token_count": 116,
+        "length": 671
+      }
+    },
+    "answer": "\u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL, \u2022 Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop \u2022 Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the \u2022 Batch Processing - Hive is optimized for batch processing of large datasets rather than real-time or \u2022 Integration with Hadoop Ecosystem - Hive seamlessly integrates with other tools in the Hadoop \u2022 User Defined Functions (UDFs) - Hive allows users to write custom functions, known as UDFs, to \u2022 Data Warehouse Functionality - Hive is designed to function as a data warehouse, supporting data"
+  },
+  {
+    "id": "Q_DEF_2",
+    "question": "What is HQL?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 HQL",
+        "valid": false
+      },
+      {
+        "section": "HQL",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "6c366faa-f1bd-489c-8429-18eac60706ba",
+        "bm25_rank": 1,
+        "dense_rank": 47,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "Hive Query Language provides SQL-like operations."
+  },
+  {
+    "id": "Q_DEF_3",
+    "question": "What is bucketing?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Bucketing",
+        "valid": false
+      },
+      {
+        "section": "Bucketing",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "b6c2e8e8-971b-4539-9025-cec03fe3934b",
+        "bm25_rank": 2,
+        "dense_rank": -1,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "8b1e1fa3-0c4c-4aa3-b1ae-b913ec1f2f62",
+        "bm25_rank": 3,
+        "dense_rank": 22,
+        "rrf_rank": 5,
+        "final_rank": 5,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "df7ce341-98aa-4e33-95d5-e38fbd24520a",
+        "bm25_rank": 1,
+        "dense_rank": -1,
+        "rrf_rank": 3,
+        "final_rank": 3,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "224bb1cb-ed85-4ec8-932c-2d6306c035fb",
+        "bm25_rank": 8,
+        "dense_rank": 37,
+        "rrf_rank": 2,
+        "final_rank": 2,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "Bucketing is another technique for managing large datasets."
+  },
+  {
+    "id": "Q_DEF_4",
+    "question": "What is partitioning?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Partitioning",
+        "valid": false
+      },
+      {
+        "section": "Partitioning",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "3a981a55-dd24-41d4-b40a-9a5b8b8a27aa",
+        "bm25_rank": 6,
+        "dense_rank": 27,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "8b1e1fa3-0c4c-4aa3-b1ae-b913ec1f2f62",
+        "bm25_rank": 1,
+        "dense_rank": 22,
+        "rrf_rank": 2,
+        "final_rank": 2,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "da548e4d-0eab-46c6-81e5-75b2a8ee7864",
+        "bm25_rank": 23,
+        "dense_rank": 33,
+        "rrf_rank": -1,
+        "final_rank": -1,
+        "failing_stage": "C/D"
+      },
+      {
+        "chunk_id": "9bf27273-c9c2-4a1a-bbb6-70770a896bba",
+        "bm25_rank": 4,
+        "dense_rank": -1,
+        "rrf_rank": 5,
+        "final_rank": 5,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "df7ce341-98aa-4e33-95d5-e38fbd24520a",
+        "bm25_rank": 2,
+        "dense_rank": -1,
+        "rrf_rank": 3,
+        "final_rank": 3,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "b0433a20-04a3-42ab-80ca-f93d89087a0e",
+        "bm25_rank": 15,
+        "dense_rank": -1,
+        "rrf_rank": -1,
+        "final_rank": -1,
+        "failing_stage": "C/D"
+      },
+      {
+        "chunk_id": "224bb1cb-ed85-4ec8-932c-2d6306c035fb",
+        "bm25_rank": 18,
+        "dense_rank": 37,
+        "rrf_rank": -1,
+        "final_rank": -1,
+        "failing_stage": "C/D"
+      }
+    ],
+    "failure_stage": "C/D",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "In static partitioning, the partition values are specified manually when loading/inserting data into a Hive table."
+  },
+  {
+    "id": "Q_DEF_5",
+    "question": "What is Hive Metastore?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Architecture",
+        "valid": false
+      },
+      {
+        "section": "Apache Hive \u2013 Components",
+        "valid": false
+      },
+      {
+        "section": "Metastore",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "b2f8f19c-99de-4bb7-b194-9032283defe5",
+        "bm25_rank": 6,
+        "dense_rank": 26,
+        "rrf_rank": 6,
+        "final_rank": 6,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "232d27a9-edf2-4bea-a322-d79e8a74df39",
+        "bm25_rank": 4,
+        "dense_rank": 50,
+        "rrf_rank": 4,
+        "final_rank": 4,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "bb85135b-8f8a-4cdb-b064-fb88cb95d20f",
+        "bm25_rank": 3,
+        "dense_rank": 25,
+        "rrf_rank": 3,
+        "final_rank": 3,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "4caacfb6-2f1c-49a2-b4b7-4ffe83c2b438",
+        "bm25_rank": 5,
+        "dense_rank": 32,
+        "rrf_rank": 5,
+        "final_rank": 5,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "e9739439-9e88-4d85-bc83-23dd564a4323",
+        "bm25_rank": 2,
+        "dense_rank": 24,
+        "rrf_rank": 2,
+        "final_rank": 2,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "ed19b914-5563-4f80-b131-de1f2b14c3aa",
+        "bm25_rank": 1,
+        "dense_rank": 40,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "[ Hive Process ] \u2193 [ Metastore Ser\tvice\t+ Derby DB\t] \u2190 All within t\the same process In this mode,\tthe\tMetastore\tservice still ru\tns within the Hive process, but ins\ttead of using\tthe embedded De\trby\tdatabase,\tit connects to a\tn external relational database suc\th as MySQL\tor PostgreSQL."
+  },
+  {
+    "id": "Q_DEF_6",
+    "question": "What is Hive architecture?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Architecture",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "Working Flow of Hive Architecture | Step 1: USER The process begins when a user submits a HiveQL query through any available interface.",
+        "token_count": 176,
+        "length": 1028
+      }
+    },
+    "answer": "Working Flow of Hive Architecture Step 1: USER The process begins when a user submits a HiveQL query through any available interface."
+  },
+  {
+    "id": "Q_FEAT_1",
+    "question": "What are the features of Hive?",
+    "intent_metrics": {
+      "benchmark_intent": "LIST_QA",
+      "mapped_intent": "LIST",
+      "actual_route": "LIST",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Features of Hive",
+        "valid": false
+      },
+      {
+        "section": "Apache Hive \u2013 Features",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "3. How Hive Works | The three main tasks performed by Apache Hive are:",
+        "token_count": 71,
+        "length": 468
+      }
+    },
+    "answer": "  \u2022 Features of Apache Hive\n  \u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL,\n  \u2022 allowing users to write familiar SQL-like queries on large datasets. This makes it easier for analysts and\n  \u2022 developers with SQL knowledge to work with big data without learning complex MapReduce code.\n  \u2022 Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop\n  \u2022 Distributed File System (HDFS). This allows it to handle and process massive volumes of data across\n  \u2022 distributed clusters efficiently.\n  \u2022 Schema on Read - Unlike traditional databases that enforce schema on write, Hive applies the"
+  },
+  {
+    "id": "Q_FEAT_2",
+    "question": "What are the advantages of Hive?",
+    "intent_metrics": {
+      "benchmark_intent": "LIST_QA",
+      "mapped_intent": "LIST",
+      "actual_route": "LIST",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Advantages of Hive",
+        "valid": false
+      },
+      {
+        "section": "Apache Hive \u2013 Advantages",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "3. How Hive Works | The three main tasks performed by Apache Hive are:",
+        "token_count": 71,
+        "length": 468
+      }
+    },
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic."
+  },
+  {
+    "id": "Q_FACT_1",
+    "question": "How was Apache Hive introduced?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "SUMMARY",
+      "match": false
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Introduction",
+        "valid": false
+      },
+      {
+        "section": "History of Hive",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "1.1 How Apache Hive was Introduced | Apache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes",
+        "token_count": 50,
+        "length": 311
+      }
+    },
+    "answer": "\nPage 1\n------\n1.1 How Apache Hive was Introduced\nApache Hive is a data warehouse and ETL tool built on top of the Hadoop ecosystem that processes\nstructured data stored in HDFS.\nIt provides an SQL-like interface, enabling users to easily interact\nwith and query large datasets without deep knowledge of MapReduce programming."
+  },
+  {
+    "id": "Q_FACT_2",
+    "question": "What does length(str) do?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "String Functions",
+        "valid": true
+      },
+      {
+        "section": "Built-in Functions",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "f3735fa6-8f13-4d6b-9fce-34bb1f9cddc2",
+        "bm25_rank": 2,
+        "dense_rank": 46,
+        "rrf_rank": 6,
+        "final_rank": 6,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "a05f827b-e954-402a-9e45-6a07be58427c",
+        "bm25_rank": 1,
+        "dense_rank": -1,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "The return type is STRING . \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string. \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in \u2022 upper(str) : Converts all characters in the string to uppercase."
+  },
+  {
+    "id": "Q_FACT_3",
+    "question": "hive layer",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Architecture",
+        "valid": false
+      },
+      {
+        "section": "Architecture",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "8ecdabcc-1893-4d1a-bc62-2647f99afce8",
+        "bm25_rank": 1,
+        "dense_rank": 6,
+        "rrf_rank": 2,
+        "final_rank": 2,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "b0433a20-04a3-42ab-80ca-f93d89087a0e",
+        "bm25_rank": 3,
+        "dense_rank": -1,
+        "rrf_rank": 8,
+        "final_rank": 8,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "HIVE LAYER | 1. Command Line Interface (CLI) - The CLI is the simplest way to interact with Hive, allowing users",
+        "token_count": 311,
+        "length": 1937
+      }
+    },
+    "answer": "Driver (Compiler, Optimizer, Executor) - The Driver is the core component of Hive that manages the lifecycle of a HiveQL query through three stages: Compiler \u2014 Parses and converts the HiveQL query into an execution plan. \uf0b7 \uf0b7 Optimizer \u2014 Refines the execution plan to improve efficiency and reduce resource usage. \uf0b7 Executor \u2014 Executes the final optimized plan by submitting jobs to the Hadoop layer. 7."
+  },
+  {
+    "id": "Q_FACT_4",
+    "question": "hive functions",
+    "intent_metrics": {
+      "benchmark_intent": "LIST_QA",
+      "mapped_intent": "LIST",
+      "actual_route": "LIST",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "String Functions",
+        "valid": true
+      },
+      {
+        "section": "Built-in Functions",
+        "valid": false
+      },
+      {
+        "section": "Aggregate Functions",
+        "valid": true
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "f3735fa6-8f13-4d6b-9fce-34bb1f9cddc2",
+        "bm25_rank": 2,
+        "dense_rank": 46,
+        "rrf_rank": 5,
+        "final_rank": 5,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "a05f827b-e954-402a-9e45-6a07be58427c",
+        "bm25_rank": 3,
+        "dense_rank": -1,
+        "rrf_rank": 1,
+        "final_rank": 1,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "bd915cc3-1b77-4346-98cc-b3b778ad6359",
+        "bm25_rank": 9,
+        "dense_rank": -1,
+        "rrf_rank": 7,
+        "final_rank": 7,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": null
+    },
+    "answer": "  \u2022 String functions in Hive are used to manipulate, format, and process string (text) data. They help in performing\n  \u2022 reverse(str) : Returns the string with its characters in reverse order. The return type is STRING .\n  \u2022 concat(str1, str2, ...) : Combines two or more strings into a single string. The return type is STRING .\n  \u2022 substr(str, start_index) : Returns the substring starting from the specified position until the end of the string.\n  \u2022 substr(str, start_index, length) : Returns a substring of the specified length starting from the given position in\n  \u2022 upper(str) : Converts all characters in the string to uppercase. The return type is STRING .\n  \u2022 ltrim(str) : Removes whitespace characters from the left side (beginning) of the string. The return type is\n  \u2022 NULL value\ts are ignored by SU\tM (), AVG (),\tMI\tN (), and MA\tX (). However,\tCOUNT (*\t) counts al"
+  },
+  {
+    "id": "Q_COMP_1",
+    "question": "What is the difference between bucketing and partitioning?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "TABLE",
+      "match": false
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Bucketing",
+        "valid": false
+      },
+      {
+        "section": "Apache Hive \u2013 Partitioning",
+        "valid": false
+      },
+      {
+        "section": "Differences",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "4.3 Bucketing | Bucketing is another technique for managing large datasets. Data in each partition is divided into",
+        "token_count": 26,
+        "length": 158
+      }
+    },
+    "answer": "\nTable\n-----\n\n| Item / Function | Description |\n| --- | --- |\n| Feature | Partitioning Bucketing |\n| Cardinality | Low / Medium High |\n| Storage | Sub-directories Files |\n| Columns | Multiple columns Single column |\n| Best For | Filtering queries Joins & sampling |\n| Data Distribution | Logical grouping Hash-based distribution |\n| Example | PARTITIONED BY (year, CLUSTERED BY (user_id) |\n| month, day) | INTO 8 BUCKETS |\n"
+  },
+  {
+    "id": "Q_FORM_1",
+    "question": "Give the string functions in Hive in a table.",
+    "intent_metrics": {
+      "benchmark_intent": "LIST_QA",
+      "mapped_intent": "LIST",
+      "actual_route": "TABLE",
+      "match": false
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "String Functions",
+        "valid": true
+      },
+      {
+        "section": "Built-in Functions",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [
+      {
+        "chunk_id": "f3735fa6-8f13-4d6b-9fce-34bb1f9cddc2",
+        "bm25_rank": 1,
+        "dense_rank": 46,
+        "rrf_rank": 4,
+        "final_rank": 4,
+        "failing_stage": "F"
+      },
+      {
+        "chunk_id": "a05f827b-e954-402a-9e45-6a07be58427c",
+        "bm25_rank": 3,
+        "dense_rank": -1,
+        "rrf_rank": 2,
+        "final_rank": 2,
+        "failing_stage": "F"
+      }
+    ],
+    "failure_stage": "F",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "Function Example Result | length('Hive') Returns string length 4",
+        "token_count": 63,
+        "length": 489
+      }
+    },
+    "answer": "\nTable\n-----\n\n| Item / Function | Description |\n| --- | --- |\n| NULL value | s are ignored by SU M (), AVG (), MI N (), and MA X (). However, COUNT (* ) counts al |\n| regardless of | NULL values. |\n| These functio | ns help in generatin g summarized inf ormation such as total sales, a verage sala ry, minim |\n| maximum va | lues, and record cou nts from large dat asets. |\n| Syntax | SEL\tECT aggregate_fu\tnction (colum\tn_\tname) FROM\ttable_name; |\n| B\tuilt-in Strin\tg Functions |  |\n| Fig 10 | Built-in St\tring\tFunctions Table |\n| String functi | ons in Hive are use d to manipulate , f ormat, and pro cess string (text ) data. The y help in p |\n| operations su | ch as concatenation , extraction, co nve rsion of case, and removal of unwanted spaces. |\n| length(str) | R\teturns the number\tof characters p\tres\tent in the give\tn string. The ret\turn type is\tINT. |\n| reverse(str) | Returns the string w\tith its characte\trs\tin reverse ord\ter. The return ty\tpe is STR\tING. |\n| concat(str1,\tstr2, ...) | Combines\ttwo or more st\trin\tgs into a singl\te string. The ret\turn type is\tSTRING. |\n| substr(str, st\tart_index) | Return\ts the substring\tsta\trting from the\tspecified positi\ton until the\tend of the |\n| The return ty | pe is STRING. |\n| substr(str, st\tart_index, length) | Returns a subs\ttri\tng of the speci\tfied length start\ting from th\te given po |\n| the string. Th | e return type is STR ING. |\n| upper(str) | C\tonverts all characte\trs in the string\tto\tuppercase. Th\te return type is\tSTRING. |\n| lower(str) | C\tonverts all characte\trs in the string\tto l\towercase. Th\te return type is\tSTRING. |\n| trim(str) | Re\tmoves leading and\ttrailing whitesp\tac\te characters fr\tom the string. T\the return t\type is STR |\n| ltrim(str) | R\temoves whitespace\tcharacters from\tth\te left side (be\tginning) of the\tstring. The\treturn typ |\n| STRING. | - |\n| rtrim(str) | R\temoves whitespace\tcharacters fro\tm t\the right side (e\tnd) of the strin\tg. The retur\tn type is S |\n| These functio | ns are widely used for data cleansi ng, formatting, a nd transformatio n of text d ata before |\n| and reporting | . |\n| Exa | mpl es |\n| F | unction Exam ple Result |\n| leng | th(' Hive') Returns string lengt h 4 |\n| rev | erse ('Hive') Reverses the string eviH |\n| con | cat( 'Big','Data') Concatenates string s BigData |\n| sub | str(' Hadoop',2) Extracts substring f rom position 2 adoop |\n| sub | str(' Hadoop',2,3) Extracts 3 character s from position 2 ado |\n| upp | er('h ive') Converts to upperca se HIVE |\n| low | er(' HIVE') Converts to lowerca se hive |\n| trim | (' H ive ') Removes spaces fro m both ends Hive |\n| ltri | m(' Hive') Removes left space s Hive |\n| rtri | m('H ive ') Removes right spac es Hive |\n| Unit IV \u2013 Apache H | ive (HQL) | Page 16 |\n"
+  },
+  {
+    "id": "Q_SUMM_1",
+    "question": "Summarize the architecture of Hive.",
+    "intent_metrics": {
+      "benchmark_intent": "SUMMARY",
+      "mapped_intent": "SUMMARY",
+      "actual_route": "SUMMARY",
+      "match": true
+    },
+    "golden_evidence_validation": [
+      {
+        "section": "Apache Hive \u2013 Architecture",
+        "valid": false
+      }
+    ],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "Working Flow of Hive Architecture | Step 1: USER The process begins when a user submits a HiveQL query through any available interface.",
+        "token_count": 176,
+        "length": 1028
+      }
+    },
+    "answer": "\nPage 9\n------\nWorking Flow of Hive Architecture\nStep 1: USER The process begins when a user submits a HiveQL query through any available interface.\nStep 2: User Interface Layer (CLI / Web / JDBC / ODBC) The query is received through one of\nHive's interfaces \u2014 Command Line, Web Browser, JDBC, or ODBC \u2014 depending on how the user is\nconnected to Hive.\nStep 3: Thrift Server (Compiler \u2192 Optimizer \u2192 Executor) The query is passed to the Thrift Server,\nwhich forwards it to the Driver.\nThe Driver then processes the query in three stages:\n\uf0b7 Compiler \u2014 Parses and converts the query into a logical plan.\n\uf0b7 Optimizer \u2014 Refines and optimizes the logical plan for better performance.\nExecutor \u2014 Prepares the final execution plan to be submitted to Hadoop.\n\uf0b7\nStep 4: Metastore (Table Metadata) Before execution, the Driver consults the Metastore to fetch\nmetadata such as table schema, column names, data types, and partition details needed to process the\nquery correctly.\n\nPage 6\n------\n4.5 Difference between Partitioning and B\tucketin\n\t\nFig 2: Difference between\tPartitioning\n\t\n5.\nHive Architecture\t\n\t\nFig: Hive Archi\ttecture Diag\n\t\nComponents - HIVE LAYER\t\n\t\n1.\nCommand Line Interface (CLI) - The CLI is the\tsimplest\n\t\nto write and execute HiveQL queries directly from t\the termin\n\t\nadministrators for quick querying and testing.\nUnit IV \u2013 Apache H\tive (HQL) |"
+  },
+  {
+    "id": "Q_NOANS_1",
+    "question": "What is quantum entanglement in Hive?",
+    "intent_metrics": {
+      "benchmark_intent": "FACT_QA",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "\u2022 SQL-like Query Language (HiveQL) - Hive provides HiveQL, a query language similar to SQL, | \u2022 Works on Hadoop HDFS - Hive is built on top of Hadoop and stores its data in the Hadoop",
+        "token_count": 116,
+        "length": 671
+      }
+    },
+    "answer": "I couldn't find enough evidence in the document to provide a reliable answer. Please try rephrasing your question or check if the document covers this topic."
+  },
+  {
+    "id": "Q_NOANS_2",
+    "question": "How to deploy a machine learning model using Hive?",
+    "intent_metrics": {
+      "benchmark_intent": "PROCEDURE",
+      "mapped_intent": "FACT_QA",
+      "actual_route": "FACT_QA",
+      "match": true
+    },
+    "golden_evidence_validation": [],
+    "multi_section_recall_10": false,
+    "rank_analysis": [],
+    "failure_stage": "A",
+    "chunk_quality": {
+      "top_incorrect": {
+        "heading": "3. How Hive Works | The three main tasks performed by Apache Hive are:",
+        "token_count": 71,
+        "length": 468
+      }
+    },
+    "answer": "Querying Hive allows users to retrieve specific data from large datasets using HiveQL, its SQL-like query language. 3."
+  }
+]

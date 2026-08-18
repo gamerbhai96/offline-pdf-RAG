@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/Section.json",
+  "title": "Section",
+  "type": "object",
+  "required": ["section_id", "document_id", "page_id"],
+  "properties": {
+    "section_id":        { "type": "string", "format": "uuid" },
+    "document_id":       { "type": "string", "format": "uuid" },
+    "page_id":           { "type": "string", "format": "uuid" },
+    "heading":           { "type": ["string", "null"] },
+    "heading_level":     { "type": ["integer", "null"], "minimum": 1, "maximum": 6 },
+    "start_offset":      { "type": "integer", "minimum": 0 },
+    "end_offset":        { "type": "integer", "minimum": 0 },
+    "child_section_ids": { "type": "array", "items": { "type": "string", "format": "uuid" } },
+    "parent_section_id": { "type": ["string", "null"], "format": "uuid" }
+  }
+}

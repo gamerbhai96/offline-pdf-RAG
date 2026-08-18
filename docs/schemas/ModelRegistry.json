@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/ModelRegistry.json",
+  "title": "ModelRegistry",
+  "description": "Registry of all tracked local ML models. Models are identified by (model_id, model_version, quantization) — never by filename.",
+  "type": "object",
+  "required": ["models"],
+  "properties": {
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["model_id", "model_version", "model_format", "checksum", "license", "dimension"],
+        "properties": {
+          "model_id":               { "type": "string" },
+          "model_version":          { "type": "string" },
+          "model_format":           { "type": "string", "enum": ["onnx", "tflite", "safetensors"] },
+          "quantization":           { "type": "string", "enum": ["none", "int8", "fp16"] },
+          "tokenizer_version":      { "type": ["string", "null"] },
+          "checksum":               { "type": "string", "description": "SHA-256 of model file" },
+          "query_prefix":           { "type": ["string", "null"] },
+          "passage_prefix":         { "type": ["string", "null"] },
+          "normalization":          { "type": "string", "enum": ["L2", "none"] },
+          "preprocessing_version":  { "type": "string" },
+          "dimension":              { "type": "integer", "minimum": 1 },
+          "max_sequence_length":    { "type": "integer", "minimum": 1 },
+          "license":                { "type": "string" },
+          "commercial_use":         { "type": "boolean" },
+          "download_url":           { "type": ["string", "null"] },
+          "local_path":             { "type": ["string", "null"] },
+          "verified_at":            { "type": ["string", "null"], "format": "date-time" },
+          "role": {
+            "type": "string",
+            "enum": ["embedding", "reranker", "extractive_qa", "ner"],
+            "description": "What this model is used for in the pipeline"
+          }
+        }
+      }
+    }
+  }
+}

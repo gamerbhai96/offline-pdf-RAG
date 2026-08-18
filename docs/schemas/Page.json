@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/Page.json",
+  "title": "Page",
+  "type": "object",
+  "required": ["page_id", "document_id", "page_number", "raw_text", "ocr_used"],
+  "properties": {
+    "page_id":       { "type": "string", "format": "uuid" },
+    "document_id":   { "type": "string", "format": "uuid" },
+    "page_number":   { "type": "integer", "minimum": 1 },
+    "raw_text":      { "type": "string" },
+    "ocr_used":      { "type": "boolean" },
+    "ocr_confidence":{ "type": ["number", "null"], "minimum": 0.0, "maximum": 1.0 },
+    "has_tables":    { "type": "boolean", "default": false },
+    "has_images":    { "type": "boolean", "default": false },
+    "width_pts":     { "type": ["number", "null"] },
+    "height_pts":    { "type": ["number", "null"] }
+  }
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "Q_DEF_1",
+    "question": "What is Hive?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Introduction", "Introduction to Apache Hive"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_DEF_2",
+    "question": "What is HQL?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – HQL", "HQL"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_DEF_3",
+    "question": "What is bucketing?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Bucketing", "Bucketing"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_DEF_4",
+    "question": "What is partitioning?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Partitioning", "Partitioning"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_DEF_5",
+    "question": "What is Hive Metastore?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Architecture", "Apache Hive – Components", "Metastore"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_DEF_6",
+    "question": "What is Hive architecture?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Architecture"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_FEAT_1",
+    "question": "What are the features of Hive?",
+    "expected_intent": "LIST_QA",
+    "expected_sections": ["Features of Hive", "Apache Hive – Features"],
+    "expected_format": "LIST"
+  },
+  {
+    "id": "Q_FEAT_2",
+    "question": "What are the advantages of Hive?",
+    "expected_intent": "LIST_QA",
+    "expected_sections": ["Advantages of Hive", "Apache Hive – Advantages"],
+    "expected_format": "LIST"
+  },
+  {
+    "id": "Q_FACT_1",
+    "question": "How was Apache Hive introduced?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Introduction", "History of Hive"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_FACT_2",
+    "question": "What does length(str) do?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["String Functions", "Built-in Functions"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_FACT_3",
+    "question": "hive layer",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Architecture", "Architecture"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_FACT_4",
+    "question": "hive functions",
+    "expected_intent": "LIST_QA",
+    "expected_sections": ["String Functions", "Built-in Functions", "Aggregate Functions"],
+    "expected_format": "AUTO"
+  },
+  {
+    "id": "Q_COMP_1",
+    "question": "What is the difference between bucketing and partitioning?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": ["Apache Hive – Bucketing", "Apache Hive – Partitioning", "Differences"],
+    "expected_format": "TABLE"
+  },
+  {
+    "id": "Q_FORM_1",
+    "question": "Give the string functions in Hive in a table.",
+    "expected_intent": "LIST_QA",
+    "expected_sections": ["String Functions", "Built-in Functions"],
+    "expected_format": "TABLE"
+  },
+  {
+    "id": "Q_SUMM_1",
+    "question": "Summarize the architecture of Hive.",
+    "expected_intent": "SUMMARY",
+    "expected_sections": ["Apache Hive – Architecture"],
+    "expected_format": "PARAGRAPH"
+  },
+  {
+    "id": "Q_NOANS_1",
+    "question": "What is quantum entanglement in Hive?",
+    "expected_intent": "FACT_QA",
+    "expected_sections": [],
+    "expected_format": "AUTO"
+  },
+  {
+    "id": "Q_NOANS_2",
+    "question": "How to deploy a machine learning model using Hive?",
+    "expected_intent": "PROCEDURE",
+    "expected_sections": [],
+    "expected_format": "AUTO"
+  }
+]

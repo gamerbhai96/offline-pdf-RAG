@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/NormalizedQuery.json",
+  "title": "NormalizedQuery",
+  "description": "Output of QuestionAnalyzer and ConversationResolver. Used as input to retrieval.",
+  "type": "object",
+  "required": [
+    "raw_query", "normalized_query", "resolved_query",
+    "question_type", "coreference_resolved", "ambiguity_flag"
+  ],
+  "properties": {
+    "raw_query":             { "type": "string" },
+    "normalized_query":      { "type": "string" },
+    "resolved_query":        { "type": "string" },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "type"],
+        "properties": {
+          "text":  { "type": "string" },
+          "type":  { "type": "string", "enum": ["PERSON", "ORG", "TECH", "DATE", "NUMBER", "ABBREV", "OTHER"] },
+          "start": { "type": "integer" },
+          "end":   { "type": "integer" }
+        }
+      }
+    },
+    "question_type": {
+      "type": "string",
+      "enum": ["FACT", "DEFINITION", "EXPLANATION", "LIST", "STEPS", "COMPARISON", "SUMMARY", "QUOTE", "NUMERICAL", "TABLE", "UNKNOWN"]
+    },
+    "format_hint": {
+      "type": ["string", "null"],
+      "enum": ["BULLETS", "NUMBERED", "TABLE", "PARAGRAPH", "QUOTE", null]
+    },
+    "document_scope":        { "type": "string", "description": "document_id UUID or 'ALL'" },
+    "important_terms":       { "type": "array", "items": { "type": "string" } },
+    "coreference_resolved":  { "type": "boolean" },
+    "resolution_confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "ambiguity_flag":        { "type": "boolean" },
+    "ambiguity_reason":      { "type": ["string", "null"] }
+  }
+}

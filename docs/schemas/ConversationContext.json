@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/ConversationContext.json",
+  "title": "ConversationContext",
+  "description": "Lightweight conversation state for follow-up resolution",
+  "type": "object",
+  "required": ["session_id", "turn_index", "updated_at"],
+  "properties": {
+    "session_id":           { "type": "string", "format": "uuid" },
+    "turn_index":           { "type": "integer", "minimum": 0 },
+    "resolved_topics":      { "type": "array", "items": { "type": "string" } },
+    "entity_stack": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "type", "turn"],
+        "properties": {
+          "text":          { "type": "string" },
+          "type":          { "type": "string" },
+          "turn":          { "type": "integer" },
+          "mention_count": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "last_document_scope":      { "type": ["string", "null"] },
+    "last_format_preference":   { "type": ["string", "null"] },
+    "updated_at":               { "type": "string", "format": "date-time" }
+  }
+}

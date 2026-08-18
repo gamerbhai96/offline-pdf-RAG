@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://offline-doc-intelligence/schemas/Answer.json",
+  "title": "Answer",
+  "description": "Fully validated and assembled answer with citations",
+  "type": "object",
+  "required": ["answer_id", "session_id", "route", "sections", "confidence_level", "validation_passed", "created_at"],
+  "properties": {
+    "answer_id":        { "type": "string", "format": "uuid" },
+    "session_id":       { "type": "string", "format": "uuid" },
+    "message_id":       { "type": "string", "format": "uuid" },
+    "route": {
+      "type": "string",
+      "enum": ["FACT_QA", "LIST", "SUMMARY", "TABLE", "NO_ANSWER"]
+    },
+    "answer_format": {
+      "type": "string",
+      "enum": ["SHORT_FACT", "EXTRACTED_PARAGRAPH", "BULLET_LIST", "NUMBERED_LIST", "TABLE", "SECTION_SUMMARY", "EXACT_QUOTE", "KEY_VALUE", "NO_ANSWER"]
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["points", "evidence_ids"],
+        "properties": {
+          "heading":      { "type": ["string", "null"] },
+          "evidence_ids": { "type": "array", "items": { "type": "string", "format": "uuid" } },
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "evidence_ids", "is_exact_span"],
+              "properties": {
+                "text":          { "type": "string" },
+                "evidence_ids":  { "type": "array", "items": { "type": "string", "format": "uuid" } },
+                "confidence":    { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+                "is_exact_span": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": ["HIGH", "MEDIUM", "LOW", "NO_ANSWER"]
+    },
+    "confidence_score":   { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "validation_passed":  { "type": "boolean" },
+    "is_complete":        { "type": "boolean", "default": true },
+    "created_at":         { "type": "string", "format": "date-time" }
+  }
+}

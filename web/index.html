@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODI Engine — Intelligence Offline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <!-- External Libraries for Markdown and syntax highlighting -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#paint1_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#paint2_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="2" y1="7" x2="22" y2="7" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8B5CF6"/>
+                                <stop offset="1" stop-color="#3B82F6"/>
+                            </linearGradient>
+                            <linearGradient id="paint1_linear" x1="2" y1="19.5" x2="22" y2="19.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8B5CF6"/>
+                                <stop offset="1" stop-color="#3B82F6"/>
+                            </linearGradient>
+                            <linearGradient id="paint2_linear" x1="2" y1="14.5" x2="22" y2="14.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8B5CF6"/>
+                                <stop offset="1" stop-color="#3B82F6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>ODI Engine</h1>
+                    <span class="badge offline-badge">Offline Native</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="upload-zone glass-panel" id="dropzone">
+                    <input type="file" id="fileInput" accept=".pdf" multiple>
+                    <div class="upload-content">
+                        <div class="upload-icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        </div>
+                        <p class="upload-title">Upload Documents</p>
+                        <p class="upload-subtitle">Drag & drop PDFs here</p>
+                    </div>
+                    <div class="upload-progress" id="uploadProgress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section list-section">
+                <div class="section-header">
+                    <h2>Knowledge Base</h2>
+                    <span class="count-badge" id="docCount">0</span>
+                </div>
+                <div class="doc-list" id="docList">
+                    <!-- Documents injected here via JS -->
+                    <div class="doc-skeleton">
+                        <div class="skel-icon"></div>
+                        <div class="skel-details">
+                            <div class="skel-line w-3/4"></div>
+                            <div class="skel-line w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="server-status">
+                    <div class="status-indicator online"></div>
+                    <span>Engine Ready</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header glass-panel">
+                <div class="header-info">
+                    <h2>Copilot Session</h2>
+                    <p>Powered by local ONNX embeddings & BM25</p>
+                </div>
+                <div class="header-actions">
+                    <label style="margin-right: 15px; font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 5px;">
+                        <input type="checkbox" id="debugToggle" style="accent-color: var(--primary);">
+                        Debug Trace
+                    </label>
+                    <button class="icon-btn" title="Clear Session" onclick="clearSession()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    </button>
+                </div>
+            </header>
+
+            <div class="messages-wrapper" id="messagesWrapper">
+                <div class="messages" id="messages">
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3>Ask anything about your documents</h3>
+                        <p>Upload a PDF to the Knowledge Base, then type a question below to extract answers and citations entirely locally.</p>
+                        <div class="suggestion-chips">
+                            <button class="chip" onclick="setInput('What are the main topics discussed?')">What are the main topics?</button>
+                            <button class="chip" onclick="setInput('Summarize the methodology.')">Summarize the methodology</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container glass-panel">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="questionInput" 
+                        placeholder="Ask a question..." 
+                        rows="1" 
+                        oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"
+                        onkeydown="if(event.key==='Enter' && !event.shiftKey){event.preventDefault();sendQuestion();}"
+                    ></textarea>
+                    <button class="send-btn" id="sendBtn" onclick="sendQuestion()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span>Shift + Return to add a new line</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
