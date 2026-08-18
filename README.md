@@ -21,30 +21,6 @@ Six engines working in sequence:
 5. **Answer Engine** — Route-specific extraction, safe presentation
 6. **Trust Engine** — Dual-gate validation, confidence, citations
 
-## Development Phases
-
-| Phase | Title | Status |
-|---|---|---|
-| 0 | Architecture + Evaluation + Licensing | ✅ Complete |
-| 1 | PDF Engine + OCR | ⏳ Pending |
-| 2 | Document Structure + Chunking | ⏳ Pending |
-| 3 | Embedding Model Benchmark | ⏳ Pending |
-| 4 | BM25 / Lexical Index | ⏳ Pending |
-| 5 | Vector Index / HNSW | ⏳ Pending |
-| 6 | Question Understanding + ConversationContext | ⏳ Pending |
-| 7 | Question Router | ⏳ Pending |
-| 8 | Hybrid Retrieval | ⏳ Pending |
-| 9 | Adaptive Ranking + Evidence Validation | ⏳ Pending |
-| 10 | Route-Specific Answer Extraction | ⏳ Pending |
-| 11 | Answer Validation + Confidence | ⏳ Pending |
-| 12 | Safe Presentation Engine | ⏳ Pending |
-| 13 | Citations + PDF Highlighting | ⏳ Pending |
-| 14 | CLI Evaluation + Debug Harness | ⏳ Pending |
-| 15 | Web/Desktop Application | ⏳ Pending |
-| 16 | Offline Android Application | ⏳ Pending |
-| 17 | Performance + Memory + Battery Optimization | ⏳ Pending |
-| 18 | Final Accuracy + Ablation Testing | ⏳ Pending |
-| 19 | Production Hardening + Release | ⏳ Pending |
 
 ## Key Constraints
 
